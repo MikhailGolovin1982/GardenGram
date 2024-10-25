@@ -8,20 +8,20 @@ class ProductImageInline(admin.TabularInline):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category', 'price', 'is_available')
+    list_display = ('id', 'name', 'category', 'price', 'currency', 'is_available', 'thumbnail')
     list_filter = ('category', 'is_available')
     search_fields = ('name', 'description')
     inlines = [ProductImageInline]  # Добавляем Inline для изображений
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'parent')
+    list_display = ('id', 'name', 'parent')
     search_fields = ('name',)
 
 @admin.register(Stock)
 class StockAdmin(admin.ModelAdmin):
-    list_display = ('product', 'quantity')
+    list_display = ('id', 'product', 'quantity')
 
 @admin.register(ProductImage)
 class ProductImageAdmin(admin.ModelAdmin):
-    list_display = ('product', 'image_tag')
+    list_display = ('id', 'product', 'image_tag')
