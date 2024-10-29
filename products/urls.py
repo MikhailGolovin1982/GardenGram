@@ -4,7 +4,7 @@ from . import views
 
 
 router = DefaultRouter()
-router.register(r'', views.ProductDetailView, basename='product')
+router.register(r'products', views.ProductDetailView, basename='product')
 
 urlpatterns = [
     # Маршруты для категорий
@@ -15,7 +15,7 @@ urlpatterns = [
     path('', include(router.urls)),
 
     # Маршруты для наличия товаров
-    path('stocks/', views.StockListCreateView.as_view(), name='stock-list-create'),
+    path('stocks/', views.StockListView.as_view(), name='stock-list'),
     path('stocks/<int:pk>/', views.StockDetailView.as_view(), name='stock-detail'),
 
     # Маршруты для изображений товаров

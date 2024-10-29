@@ -10,8 +10,11 @@ from .serializers import CategorySerializer, ProductSerializer, StockSerializer,
 
 # Представление для категорий
 class CategoryListCreateView(generics.ListCreateAPIView):
-    queryset = Category.objects.all()
     serializer_class = CategorySerializer
+
+    def get_queryset(self):
+        # Возвращаем только корневые категории для GET запросов
+        return Category.objects.filter(parent__isnull=True)
 
 class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Category.objects.all()
@@ -36,14 +39,15 @@ class ProductDetailView(viewsets.ModelViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
-# Представление для наличия товаров
-class StockListCreateView(generics.ListCreateAPIView):
+class StockListView(generics.ListAPIView):
     queryset = Stock.objects.all()
     serializer_class = StockSerializer
 
-class StockDetailView(generics.RetrieveUpdateDestroyAPIView):
+class StockDetailView(generics.RetrieveUpdateAPIView):
     queryset = Stock.objects.all()
     serializer_class = StockSerializer
+    http_method_names = ['get', 'patch']  # Ограничиваем доступные методы
+
 
 # Представление для изображений товаров
 class ProductImageListCreateView(generics.ListCreateAPIView):
@@ -53,3 +57,4 @@ class ProductImageListCreateView(generics.ListCreateAPIView):
 class ProductImageDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = ProductImage.objects.all()
     serializer_class = ProductImageSerializer
+    http_method_names = ['get', 'patch', 'delete']  # Ограничиваем доступные методы
