@@ -1,0 +1,74 @@
+# 1) Базовые папки
+mkdir -p backend mobile docs
+
+# 2) .gitignore в корне
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+ENV/
+.env
+.env.*
+*.sqlite3
+
+# Django
+staticfiles/
+media/
+
+# Node / RN
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.expo/
+.expo-shared/
+dist/
+build/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+EOF
+
+# 3) requirements для backend
+cat > backend/requirements.txt << 'EOF'
+Django>=5.0,<6.0
+djangorestframework>=3.15,<4.0
+djangorestframework-simplejwt>=5.3,<6.0
+drf-spectacular>=0.27,<1.0
+django-cors-headers>=4.4,<5.0
+psycopg2-binary>=2.9,<3.0
+python-dotenv>=1.0,<2.0
+gunicorn>=21.2,<22.0
+whitenoise>=6.6,<7.0
+EOF
+
+# 4) README
+cat > README.md << 'EOF'
+# GardenGram
+
+Онлайн-магазин садовых и декоративных растений.  
+**Backend:** Django + DRF, PostgreSQL.  
+**Mobile:** React Native (Expo).
+
+## Структура
+- `backend/` — Django-проект
+- `mobile/` — мобильное приложение
+- `docs/` — документация/схемы
+
+## Быстрый старт (backend — dev)
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+django-admin startproject config .
+python manage.py migrate
+python manage.py runserver 0.0.0.0:8000
