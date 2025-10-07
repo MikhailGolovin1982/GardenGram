@@ -1,3 +1,24 @@
+# из корня репозитория
+mkdir -p backend/apps/{users,catalog,core} backend/{config,common,tests} backend/scripts
+mkdir -p mobile
+mkdir -p docs
+mkdir -p exchange
+
+# файлы-маркеры, чтобы гит видел каталоги
+touch backend/apps/users/__init__.py
+touch backend/apps/catalog/__init__.py
+touch backend/apps/core/__init__.py
+touch backend/common/__init__.py
+touch backend/tests/__init__.py
+
+# .gitkeep в местах, где пока нет файлов
+touch mobile/.gitkeep
+touch docs/.gitkeep
+touch exchange/.gitkeep
+touch backend/scripts/.gitkeep
+
+
+
 # 1) Базовые папки
 mkdir -p backend mobile docs
 
