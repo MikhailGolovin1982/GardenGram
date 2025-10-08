@@ -1,3 +1,7 @@
+docker exec -it gardengram-postgres psql -U gg_user -d gardengram
+
+
+
 cat > .env << 'EOF'
 # PostgreSQL
 POSTGRES_DB=gardengram
