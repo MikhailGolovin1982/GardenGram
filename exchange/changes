@@ -1,3 +1,18 @@
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.getenv("POSTGRES_DB", "gardengram"),
+        "USER": os.getenv("POSTGRES_USER", "gg_user"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "gg_password"),
+        "HOST": os.getenv("POSTGRES_HOST", "db"),  # имя сервиса из docker-compose
+        "PORT": os.getenv("POSTGRES_PORT", "5432"),
+        "CONN_MAX_AGE": 60,
+    }
+}
+
+
+
+
 docker exec -it gardengram-postgres psql -U gg_user -d gardengram
 
 
