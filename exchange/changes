@@ -1,1 +1,17 @@
+cat > .env << 'EOF'
+# PostgreSQL
+POSTGRES_DB=gardengram
+POSTGRES_USER=gg_user
+POSTGRES_PASSWORD=gg_password
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
+
+# Redis
+REDIS_HOST=redis
+REDIS_PORT=6379
+
+# Django (используем позже)
+DJANGO_DEBUG=True
+DJANGO_SECRET_KEY=changeme-in-prod
+EOF
 
