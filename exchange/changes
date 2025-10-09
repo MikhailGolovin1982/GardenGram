@@ -1,3 +1,24 @@
+INSTALLED_APPS = [
+    # стандартные
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    # сторонние
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'drf_spectacular',
+    'corsheaders',
+
+    # наши
+    'apps.users',
+]
+
+
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
