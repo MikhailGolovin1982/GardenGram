@@ -1,8 +1,9 @@
 from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from drf_spectacular.utils import extend_schema, OpenApiResponse  # ← добавили
-from .serializers import RegisterSerializer
+from .serializers import RegisterSerializer, UserSerializer
 
 
 class RegisterView(APIView):
@@ -25,3 +26,11 @@ class RegisterView(APIView):
                 status=status.HTTP_201_CREATED
             )
         return Response(s.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class MeView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    @extend_schema(responses=UserSerializer, tags=["auth"])
+    def get(self, request):
+        return Response(UserSerializer(request.user).data)

@@ -76,8 +76,17 @@ SPECTACULAR_SETTINGS = {
     "TITLE": "GardenGram API",
     "DESCRIPTION": "API for GardenGram project",
     "VERSION": "1.0.0",
+    "COMPONENTS": {
+        "securitySchemes": {
+            "BearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT",
+            }
+        }
+    },
+    "SECURITY": [{"BearerAuth": []}],
 }
-
 
 ROOT_URLCONF = "config.urls"
 

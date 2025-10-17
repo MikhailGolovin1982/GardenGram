@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
-from apps.users.views import RegisterView
+from apps.users.views import RegisterView, MeView
 
 
 
@@ -19,3 +19,6 @@ urlpatterns = [
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
 ]
 
+urlpatterns += [
+    path('api/v1/me/', MeView.as_view(), name='me'),
+]
