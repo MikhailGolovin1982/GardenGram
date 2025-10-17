@@ -1,3 +1,21 @@
+SPECTACULAR_SETTINGS = {
+    "TITLE": "GardenGram API",
+    "DESCRIPTION": "API for GardenGram project",
+    "VERSION": "1.0.0",
+    "COMPONENTS": {
+        "securitySchemes": {
+            "BearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT",
+            }
+        }
+    },
+    "SECURITY": [{"BearerAuth": []}],
+}
+
+
+
 from apps.users.views import RegisterView, MeView
 urlpatterns += [
     path('api/v1/me/', MeView.as_view(), name='me'),
