@@ -1,32 +1,29 @@
-git fetch origin
-git pull --rebase origin main
-git push
+from apps.users.views import RegisterView, MeView
+urlpatterns += [
+    path('api/v1/me/', MeView.as_view(), name='me'),
+]
 
 
-
-from rest_framework import status
-from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
-from drf_spectacular.utils import extend_schema, OpenApiResponse  # ← добавили
-from .serializers import RegisterSerializer
+from rest_framework.response import Response
+from drf_spectacular.utils import extend_schema
+from .serializers import UserSerializer
 
-class RegisterView(APIView):
-    authentication_classes = []
-    permission_classes = []
+class MeView(APIView):
+    permission_classes = [IsAuthenticated]
 
-    @extend_schema(                              # ← добавили
-        request=RegisterSerializer,              # тело запроса берётся из сериализатора
-        responses={201: OpenApiResponse(response=None, description="User created"),
-                   400: OpenApiResponse(response=None, description="Validation error")},
-        description="Register a new user (username, email, password).",
-        tags=["auth"]
-    )
-    def post(self, request):
-        s = RegisterSerializer(data=request.data)
-        if s.is_valid():
-            user = s.save()
-            return Response(
-                {"id": user.id, "username": user.username, "email": user.email},
-                status=status.HTTP_201_CREATED
-            )
-        return Response(s.errors, status=status.HTTP_400_BAD_REQUEST)
+    @extend_schema(responses=UserSerializer, tags=["auth"])
+    def get(self, request):
+        return Response(UserSerializer(request.user).data)
+
+
+
+
+from django.contrib.auth.models import User
+from rest_framework import serializers
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ("id", "username", "email")
