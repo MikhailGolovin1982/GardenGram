@@ -1,4 +1,70 @@
 Term_EN,Term_RU,Comment
+DEF,DEF,SINUMERIK keyword, do not translate
+ENDDEF,ENDDEF,SINUMERIK keyword, do not translate
+IF,IF,Control keyword, do not translate
+THEN,THEN,Control keyword, do not translate
+ELSE,ELSE,Control keyword, do not translate
+ENDIF,ENDIF,Control keyword, do not translate
+WHILE,WHILE,Control keyword, do not translate
+ENDWHILE,ENDWHILE,Control keyword, do not translate
+FOR,FOR,Control keyword, do not translate
+ENDFOR,ENDFOR,Control keyword, do not translate
+REPEAT,REPEAT,Control keyword, do not translate
+UNTIL,UNTIL,Control keyword, do not translate
+GOTO,GOTO,Control keyword, do not translate
+STOPRE,STOPRE,SINUMERIK command, do not translate
+M17,M17,Subprogram end, do not translate
+M30,M30,Program end, do not translate
+
+CYCLE81,CYCLE81,Drilling cycle, do not translate
+CYCLE82,CYCLE82,Drilling cycle, do not translate
+CYCLE83,CYCLE83,Peck drilling cycle, do not translate
+CYCLE84,CYCLE84,Tapping cycle, do not translate
+CYCLE85,CYCLE85,SINUMERIK cycle, do not translate
+CYCLE86,CYCLE86,SINUMERIK cycle, do not translate
+CYCLE87,CYCLE87,SINUMERIK cycle, do not translate
+CYCLE88,CYCLE88,SINUMERIK cycle, do not translate
+CYCLE89,CYCLE89,SINUMERIK cycle, do not translate
+CYCLE800,CYCLE800,5-axis orientation cycle, do not translate
+CYCLE832,CYCLE832,HSC cycle, do not translate
+
+TRAORI,TRAORI,Tool orientation, do not translate
+TRAFOOF,TRAFOOF,Transformation off, do not translate
+TRANS,TRANS,Transformation command, do not translate
+ATRANS,ATRANS,Transformation command, do not translate
+ROT,ROT,Rotation command, do not translate
+AROT,AROT,Rotation command, do not translate
+SCALE,SCALE,Scaling command, do not translate
+ASCALE,ASCALE,Scaling command, do not translate
+MIRROR,MIRROR,Mirroring command, do not translate
+AMIRROR,AMIRROR,Mirroring command, do not translate
+
+ORIWKS,ORIWKS,Orientation command, do not translate
+ORIVERT,ORIVERT,Orientation command, do not translate
+ORIFIX,ORIFIX,Orientation command, do not translate
+SOFT,SOFT,SINUMERIK command, do not translate
+ANG,ANG,Angle parameter, do not translate
+FFWON,FFWON,Feedforward on, do not translate
+FFWOF,FFWOF,Feedforward off, do not translate
+
+$P_UIFR,$P_UIFR,System variable, do not translate
+$P_UIFRNUM,$P_UIFRNUM,System variable, do not translate
+$P_TOOLR,$P_TOOLR,System variable, do not translate
+$P_TOOLNO,$P_TOOLNO,System variable, do not translate
+$TC_DP,$TC_DP,Tool data, do not translate
+$TC_TP,$TC_TP,Tool data, do not translate
+$AA_IM,$AA_IM,Axis data, do not translate
+
+SPOS,SPOS,Spindle position, do not translate
+POS,POS,Position parameter, do not translate
+AP,AP,Approach parameter, do not translate
+RP,RP,Retract parameter, do not translate
+RND,RND,Rounding parameter, do not translate
+CHF,CHF,Chamfer parameter, do not translate
+
+
+
+Term_EN,Term_RU,Comment
 G00,G00,Rapid positioning, do not translate
 G01,G01,Linear interpolation, do not translate
 G02,G02,Circular interpolation CW, do not translate
