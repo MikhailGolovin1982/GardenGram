@@ -1,3 +1,94 @@
+Term_EN,Term_RU,Comment
+G00,G00,Rapid positioning, do not translate
+G01,G01,Linear interpolation, do not translate
+G02,G02,Circular interpolation CW, do not translate
+G03,G03,Circular interpolation CCW, do not translate
+G04,G04,Dwell, do not translate
+G05,G05,High precision contour control, do not translate
+G07,G07,Imaginary axis interpolation, do not translate
+G09,G09,Exact stop, do not translate
+G17,G17,XY plane selection, do not translate
+G18,G18,XZ plane selection, do not translate
+G19,G19,YZ plane selection, do not translate
+
+G53,G53,Machine coordinate system, do not translate
+G54,G54,Work offset, do not translate
+G55,G55,Work offset, do not translate
+G56,G56,Work offset, do not translate
+G57,G57,Work offset, do not translate
+G58,G58,Work offset, do not translate
+G59,G59,Work offset, do not translate
+G90,G90,Absolute programming, do not translate
+G91,G91,Incremental programming, do not translate
+G40,G40,Cancel cutter compensation, do not translate
+G41,G41,Cutter compensation left, do not translate
+G42,G42,Cutter compensation right, do not translate
+
+G43,G43,Tool length compensation positive, do not translate
+G44,G44,Tool length compensation negative, do not translate
+G49,G49,Cancel tool length compensation, do not translate
+G20,G20,Programming in inches, do not translate
+G21,G21,Programming in millimeters, do not translate
+
+G94,G94,Feed per minute, do not translate
+G95,G95,Feed per revolution, do not translate
+
+G73,G73,High speed peck drilling, do not translate
+G74,G74,Left-hand tapping, do not translate
+G76,G76,Thread cutting cycle, do not translate
+G81,G81,Drilling cycle, do not translate
+G82,G82,Drilling with dwell, do not translate
+G83,G83,Peck drilling cycle, do not translate
+G84,G84,Tapping cycle, do not translate
+G85,G85,Boring cycle, do not translate
+G86,G86,Boring cycle, do not translate
+G87,G87,Back boring cycle, do not translate
+G88,G88,Boring with manual dwell, do not translate
+G89,G89,Boring with dwell, do not translate
+M00,M00,Program stop, do not translate
+M01,M01,Optional stop, do not translate
+M02,M02,End of program, do not translate
+M03,M03,Spindle on clockwise, do not translate
+M04,M04,Spindle on counterclockwise, do not translate
+M05,M05,Spindle stop, do not translate
+M06,M06,Tool change, do not translate
+M08,M08,Coolant on, do not translate
+M09,M09,Coolant off, do not translate
+M10,M10,Clamp, do not translate
+M11,M11,Unclamp, do not translate
+M17,M17,End of subprogram, do not translate
+M30,M30,End of program and reset, do not translate
+M98,M98,Call subprogram, do not translate
+M99,M99,Return from subprogram, do not translate
+
+X,X,Axis address, do not translate
+Y,Y,Axis address, do not translate
+Z,Z,Axis address, do not translate
+A,A,Rotary axis, do not translate
+B,B,Rotary axis, do not translate
+C,C,Rotary axis, do not translate
+
+I,I,Arc center offset, do not translate
+J,J,Arc center offset, do not translate
+K,K,Arc center offset, do not translate
+
+F,F,Feedrate, do not translate
+S,S,Spindle speed, do not translate
+T,T,Tool number, do not translate
+H,H,Tool length offset, do not translate
+D,D,Tool radius offset, do not translate
+
+IF,IF,Control logic keyword, do not translate
+ELSE,ELSE,Control logic keyword, do not translate
+ENDIF,ENDIF,Control logic keyword, do not translate
+WHILE,WHILE,Loop keyword, do not translate
+ENDWHILE,ENDWHILE,Loop keyword, do not translate
+FOR,FOR,Loop keyword, do not translate
+ENDFOR,ENDFOR,Loop keyword, do not translate
+GOTO,GOTO,Jump command, do not translate
+
+
+
 
 
 SPECTACULAR_SETTINGS = {
