@@ -1,17 +1,12 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
+import os
+from dotenv import load_dotenv
 
-# Virtual environment
-.venv/
+load_dotenv()
 
-# Secrets
-.env
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
+PHONE_NUMBER = os.getenv("PHONE_NUMBER")
 
-# Telethon session files
-*.session
-*.session-journal
-
-# VS Code
-.vscode/
+# Путь к session-файлу (всегда внутри папки пакета)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+SESSION_FILE = os.path.join(BASE_DIR, "session")
