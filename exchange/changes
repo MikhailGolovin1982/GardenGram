@@ -1,5 +1,30 @@
-from telethon import TelegramClient
+from telethon import TelegramClient, events
 from config import API_ID, API_HASH, PHONE_NUMBER, SESSION_FILE
+
+# ID группы (с -100)
+TARGET_CHAT = -1001460415788
+
+# Ключевые слова
+KEYWORDS = [
+    "слот",
+    "малидак",
+    "malidak"
+]
+
+
+client = TelegramClient(SESSION_FILE, API_ID, API_HASH)
+
+
+@client.on(events.NewMessage(chats=TARGET_CHAT))
+async def handler(event):
+    message_text = event.raw_text.lower()
+
+    if any(keyword in message_text for keyword in KEYWORDS):
+        sender = await event.get_sender()
+        print("\n🔔 Найдено сообщение:")
+        print(f"От: {sender.first_name}")
+        print(f"Текст: {event.raw_text}")
+        print("-" * 40)
 
 
 async def main():
@@ -9,11 +34,9 @@ async def main():
     me = await client.get_me()
     print(f"Успешный вход как: {me.first_name} (id={me.id})")
 
-    print("Клиент запущен. Ожидание событий...")
+    print("Отслеживаем сообщения в группе...")
     await client.run_until_disconnected()
 
-
-client = TelegramClient(SESSION_FILE, API_ID, API_HASH)
 
 if __name__ == "__main__":
     with client:
