@@ -9,6 +9,9 @@ async def main():
     me = await client.get_me()
     print(f"Успешный вход как: {me.first_name} (id={me.id})")
 
+    print("Клиент запущен. Ожидание событий...")
+    await client.run_until_disconnected()
+
 
 client = TelegramClient(SESSION_FILE, API_ID, API_HASH)
 
