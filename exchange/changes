@@ -1,12 +1,17 @@
-import os
-from dotenv import load_dotenv
+from telethon import TelegramClient
+from config import API_ID, API_HASH, PHONE_NUMBER, SESSION_FILE
 
-load_dotenv()
 
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("API_HASH")
-PHONE_NUMBER = os.getenv("PHONE_NUMBER")
+async def main():
+    print("Подключаемся к Telegram...")
+    await client.start(phone=PHONE_NUMBER)
 
-# Путь к session-файлу (всегда внутри папки пакета)
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-SESSION_FILE = os.path.join(BASE_DIR, "session")
+    me = await client.get_me()
+    print(f"Успешный вход как: {me.first_name} (id={me.id})")
+
+
+client = TelegramClient(SESSION_FILE, API_ID, API_HASH)
+
+if __name__ == "__main__":
+    with client:
+        client.loop.run_until_complete(main())
