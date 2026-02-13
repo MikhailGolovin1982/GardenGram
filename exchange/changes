@@ -1,43 +1,20 @@
-from telethon import TelegramClient, events
-from config import API_ID, API_HASH, PHONE_NUMBER, SESSION_FILE
-
-# ID группы (с -100)
-TARGET_CHAT = -1001460415788
-
-# Ключевые слова
-KEYWORDS = [
-    "слот",
-    "малидак",
-    "malidak"
-]
-
-
-client = TelegramClient(SESSION_FILE, API_ID, API_HASH)
-
-
 @client.on(events.NewMessage(chats=TARGET_CHAT))
 async def handler(event):
     message_text = event.raw_text.lower()
 
     if any(keyword in message_text for keyword in KEYWORDS):
         sender = await event.get_sender()
-        print("\n🔔 Найдено сообщение:")
-        print(f"От: {sender.first_name}")
-        print(f"Текст: {event.raw_text}")
+        sender_name = getattr(sender, "first_name", "") or "Unknown"
+
+        notify_text = (
+            "🔔 Найдено сообщение про слот\n"
+            f"👤 Автор: {sender_name}\n"
+            f"💬 Текст: {event.raw_text}"
+        )
+
+        # 1) Печатаем в терминал (оставляем для отладки)
+        print("\n" + notify_text)
         print("-" * 40)
 
-
-async def main():
-    print("Подключаемся к Telegram...")
-    await client.start(phone=PHONE_NUMBER)
-
-    me = await client.get_me()
-    print(f"Успешный вход как: {me.first_name} (id={me.id})")
-
-    print("Отслеживаем сообщения в группе...")
-    await client.run_until_disconnected()
-
-
-if __name__ == "__main__":
-    with client:
-        client.loop.run_until_complete(main())
+        # 2) Отправляем в Saved Messages (сообщение самому себе)
+        await client.send_message("me", notify_text)
