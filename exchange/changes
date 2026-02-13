@@ -1,20 +1,4 @@
-from telethon import TelegramClient
-from config import API_ID, API_HASH, PHONE_NUMBER, SESSION_FILE
-
-async def main():
-    await client.start(phone=PHONE_NUMBER)
-
-    dialogs = await client.get_dialogs(limit=200)
-
-    print("Список чатов (название | id):")
-    for d in dialogs:
-        ent = d.entity
-        title = getattr(ent, "title", None)
-        if title:
-            print(f"{title} | {ent.id}")
-
-client = TelegramClient(SESSION_FILE, API_ID, API_HASH)
-
-if __name__ == "__main__":
-    with client:
-        client.loop.run_until_complete(main())
+@client.on(events.NewMessage)
+async def debug_any_chat(event):
+    # Печатаем, откуда реально пришло событие
+    print(f"[DEBUG] chat_id={event.chat_id} | text={event.raw_text}")
