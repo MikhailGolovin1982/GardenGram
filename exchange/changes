@@ -1,34 +1,20 @@
-SELL_WORDS = [
-    "продам", "отдам", "уступлю", "передам",
-    "освободился", "освобождается", "свободен"
-]
+from telethon import TelegramClient
+from config import API_ID, API_HASH, PHONE_NUMBER, SESSION_FILE
 
-EVENT_WORDS = [
-    "иремель", "большой иремель", "б.иремель",
-    "big iremel", "iremel"
-]
+async def main():
+    await client.start(phone=PHONE_NUMBER)
 
-DIST_WORDS = [
-    "27", "27км", "27 км", "27к"
-]
+    dialogs = await client.get_dialogs(limit=200)
 
-EXCLUDE_WORDS = [
-    "ищу", "куплю", "нужен", "возьму",
-    "кто продаст", "кто продает", "кто продаёт",
-    "есть ли", "подскажите", "где купить"
-]
+    print("Список чатов (название | id):")
+    for d in dialogs:
+        ent = d.entity
+        title = getattr(ent, "title", None)
+        if title:
+            print(f"{title} | {ent.id}")
 
+client = TelegramClient(SESSION_FILE, API_ID, API_HASH)
 
-def is_target_message(text: str) -> bool:
-    t = text.lower()
-
-    # Исключаем сообщения “ищу/куплю/нужен…”
-    if any(x in t for x in EXCLUDE_WORDS):
-        return False
-
-    # Должно быть: слово продажи + название события + дистанция
-    has_sell = any(x in t for x in SELL_WORDS)
-    has_event = any(x in t for x in EVENT_WORDS)
-    has_dist = any(x in t for x in DIST_WORDS)
-
-    return has_sell and has_event and has_dist
+if __name__ == "__main__":
+    with client:
+        client.loop.run_until_complete(main())
