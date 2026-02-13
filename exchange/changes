@@ -1,20 +1,34 @@
-@client.on(events.NewMessage(chats=TARGET_CHAT))
-async def handler(event):
-    message_text = event.raw_text.lower()
+SELL_WORDS = [
+    "продам", "отдам", "уступлю", "передам",
+    "освободился", "освобождается", "свободен"
+]
 
-    if any(keyword in message_text for keyword in KEYWORDS):
-        sender = await event.get_sender()
-        sender_name = getattr(sender, "first_name", "") or "Unknown"
+EVENT_WORDS = [
+    "иремель", "большой иремель", "б.иремель",
+    "big iremel", "iremel"
+]
 
-        notify_text = (
-            "🔔 Найдено сообщение про слот\n"
-            f"👤 Автор: {sender_name}\n"
-            f"💬 Текст: {event.raw_text}"
-        )
+DIST_WORDS = [
+    "27", "27км", "27 км", "27к"
+]
 
-        # 1) Печатаем в терминал (оставляем для отладки)
-        print("\n" + notify_text)
-        print("-" * 40)
+EXCLUDE_WORDS = [
+    "ищу", "куплю", "нужен", "возьму",
+    "кто продаст", "кто продает", "кто продаёт",
+    "есть ли", "подскажите", "где купить"
+]
 
-        # 2) Отправляем в Saved Messages (сообщение самому себе)
-        await client.send_message("me", notify_text)
+
+def is_target_message(text: str) -> bool:
+    t = text.lower()
+
+    # Исключаем сообщения “ищу/куплю/нужен…”
+    if any(x in t for x in EXCLUDE_WORDS):
+        return False
+
+    # Должно быть: слово продажи + название события + дистанция
+    has_sell = any(x in t for x in SELL_WORDS)
+    has_event = any(x in t for x in EVENT_WORDS)
+    has_dist = any(x in t for x in DIST_WORDS)
+
+    return has_sell and has_event and has_dist
