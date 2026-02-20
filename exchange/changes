@@ -1,28 +1,11 @@
-@client.on(events.NewMessage(chats=TARGET_CHAT))
-async def handler(event):
-    if not is_target_message(event.raw_text):
-        return
-
-    # Не отвечаем на свои сообщения
-    me = await client.get_me()
-    if event.sender_id == me.id:
-        return
-
-    sender = await event.get_sender()
-    sender_name = getattr(sender, "first_name", "") or "Unknown"
-
-    notify_text = (
-        "🔔 Найдено сообщение про слот\n"
-        f"👤 Автор: {sender_name}\n"
-        f"💬 Текст: {event.raw_text}"
-    )
-
-    print("\n" + notify_text)
-    print("-" * 40)
-
-    # 1️⃣ Уведомление себе
-    await client.send_message("me", notify_text)
-
-    # 2️⃣ Мгновенный ответ в чат (reply)
-    reply_text = "Беру слот. Готов приобрести. Написал в личку."
-    await event.reply(reply_text)
+# 3️⃣ Личное сообщение продавцу
+    if sender.id not in CONTACTED_USERS:
+        try:
+            private_text = (
+                "Здравствуйте! Готов приобрести слот на Большой Иремель 27 км.\n"
+                "Подскажите, пожалуйста, условия передачи."
+            )
+            await client.send_message(sender.id, private_text)
+            CONTACTED_USERS.add(sender.id)
+        except Exception as e:
+            print(f"Не удалось написать в личку: {e}")
