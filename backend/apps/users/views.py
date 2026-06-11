@@ -14,7 +14,7 @@ class RegisterView(APIView):
         request=RegisterSerializer,              # тело запроса берётся из сериализатора
         responses={201: OpenApiResponse(response=None, description="User created"),
                    400: OpenApiResponse(response=None, description="Validation error")},
-        description="Register a new user (username, email, password).",
+        description="Register a new user (phone, email, password).",
         tags=["auth"]
     )
     def post(self, request):
@@ -22,7 +22,7 @@ class RegisterView(APIView):
         if s.is_valid():
             user = s.save()
             return Response(
-                {"id": user.id, "username": user.username, "email": user.email},
+                {"id": user.id, "phone": user.phone, "email": user.email},
                 status=status.HTTP_201_CREATED
             )
         return Response(s.errors, status=status.HTTP_400_BAD_REQUEST)

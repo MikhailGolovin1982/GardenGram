@@ -1,19 +1,50 @@
-from django.contrib.auth.models import User
+import re
+
+from django.contrib.auth import get_user_model
 from rest_framework import serializers
+
+User = get_user_model()
+
+
+def normalize_phone(value):
+    """
+    Приводим пользовательский ввод к каноническому виду +7XXXXXXXXXX.
+    Принимаем распространённые формы: 8XXXXXXXXXX, 7XXXXXXXXXX, +7XXXXXXXXXX,
+    а также номера с пробелами/скобками/дефисами.
+    """
+    digits = re.sub(r"\D", "", value or "")
+    if len(digits) == 11 and digits[0] in ("7", "8"):
+        digits = digits[1:]
+    if len(digits) != 10:
+        raise serializers.ValidationError(
+            "Телефон должен содержать 10 цифр (например +7 917 123-45-67)."
+        )
+    return "+7" + digits
 
 
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, min_length=8)
+    email = serializers.EmailField(required=True)  # обязателен при регистрации
 
     class Meta:
         model = User
-        fields = ("username", "email", "password")
+        fields = ("phone", "email", "password", "city", "address")
+        extra_kwargs = {
+            "city": {"required": False},
+            "address": {"required": False},
+        }
+
+    def validate_phone(self, value):
+        return normalize_phone(value)
 
     def create(self, validated_data):
+        password = validated_data.pop("password")
         return User.objects.create_user(
-            username=validated_data["username"],
-            email=validated_data.get("email", ""),
-            password=validated_data["password"],
+            phone=validated_data["phone"],
+            email=validated_data["email"],
+            password=password,
+            city=validated_data.get("city", ""),
+            address=validated_data.get("address", ""),
             is_active=True,
         )
 
@@ -21,5 +52,13 @@ class RegisterSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ("id", "username", "email")
-        
+        fields = (
+            "id",
+            "phone",
+            "email",
+            "city",
+            "address",
+            "phone_verified",
+            "email_verified",
+        )
+        read_only_fields = ("phone_verified", "email_verified")

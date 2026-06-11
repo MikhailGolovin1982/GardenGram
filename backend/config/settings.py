@@ -164,3 +164,7 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Кастомная модель пользователя (вход по телефону).
+# Задаётся ДО первой миграции — менять после наполнения базы крайне болезненно.
+AUTH_USER_MODEL = "users.User"
