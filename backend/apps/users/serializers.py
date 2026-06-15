@@ -25,6 +25,10 @@ def normalize_phone(value):
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, min_length=8)
     email = serializers.EmailField(required=True)  # обязателен при регистрации
+    # Объявляем phone явно как обычный CharField, чтобы НЕ наследовать от модели
+    # валидатор формата (^\+7\d{10}$) и max_length. Иначе они срабатывают раньше
+    # validate_phone и отбивают «грязный» ввод (8 917…) до нормализации.
+    phone = serializers.CharField()
 
     class Meta:
         model = User
