@@ -28,7 +28,17 @@ SECRET_KEY = "django-insecure---z%y3#k#jja)@qez$n2)pm0$&qnl0qf_3(#3yu!5@0mj*)n)%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+
+# Dev: автоматически разрешаем forwarded-домен GitHub Codespaces.
+# Срабатывает только внутри Codespaces (есть переменная CODESPACE_NAME),
+# на проде/локально поведение не меняется.
+_codespace = os.getenv("CODESPACE_NAME")
+if _codespace:
+    _domain = os.getenv("GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN", "app.github.dev")
+    _host = f"{_codespace}-8000.{_domain}"
+    ALLOWED_HOSTS.append(_host)
+    CSRF_TRUSTED_ORIGINS = [f"https://{_host}"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
