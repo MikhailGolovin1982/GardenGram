@@ -20,3 +20,6 @@ build/
 Thumbs.db
 .vscode/
 .idea/
+
+# Local scratch / временные рабочие заметки и планы (не коммитим)
+_scratch/
