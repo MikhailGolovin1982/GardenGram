@@ -58,9 +58,11 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'drf_spectacular',
     'corsheaders',
+    'mptt',
 
     # наши
     'apps.users',
+    'apps.catalog',
 ]
 
 MIDDLEWARE = [
@@ -169,6 +171,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = "static/"
+
+# Медиа-файлы (загружаемые фото товаров).
+# В dev раздаются Django через config/urls.py при DEBUG; папка media/ — в .gitignore.
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
@@ -22,3 +24,8 @@ urlpatterns = [
 urlpatterns += [
     path('api/v1/me/', MeView.as_view(), name='me'),
 ]
+
+# В режиме разработки Django сам раздаёт загруженные media-файлы.
+# На проде это делает веб-сервер (nginx/whitenoise), поэтому только при DEBUG.
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
