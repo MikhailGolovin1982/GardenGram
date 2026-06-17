@@ -7,7 +7,8 @@
 """
 
 from django.contrib import admin
-from django.utils.html import format_html
+from django.utils.html import format_html, format_html_join
+from django.utils.safestring import mark_safe
 from mptt.admin import DraggableMPTTAdmin, TreeRelatedFieldListFilter
 from mptt.forms import TreeNodeChoiceField
 
@@ -114,12 +115,18 @@ class ProductAdmin(admin.ModelAdmin):
 
     @admin.display(description="Варианты")
     def variants_summary(self, obj):
-        """Сводка по вариантам прямо в списке товаров: их число и краткие формы продажи."""
+        """Сводка по вариантам прямо в списке товаров: число + форма продажи и цена построчно.
+
+        short_label уже даёт «ОКС — 600 ₽» / «ЗКС 5 л — 800 ₽». Данные наши собственные
+        (не пользовательский ввод), поэтому format_html_join с <br> здесь безопасен.
+        """
         variants = list(obj.variants.all())
         if not variants:
             return "—"
-        forms = "; ".join(v.form_label for v in variants)
-        return f"{len(variants)}: {forms}"
+        rows = format_html_join(
+            mark_safe("<br>"), "{}", ((v.short_label,) for v in variants)
+        )
+        return format_html("{}:<br>{}", len(variants), rows)
 
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         """Категорию выбираем выпадающим списком с отступами (видно вложенность дерева)."""
