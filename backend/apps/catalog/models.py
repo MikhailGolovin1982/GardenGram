@@ -166,6 +166,12 @@ class ProductImage(models.Model):
         return f"Фото #{self.position} для {self.product}"
 
 
+def _trim_decimal(value):
+    """«600.00» → «600», «5.0» → «5», «2.5» → «2.5» — для аккуратных подписей."""
+    text = f"{value:f}"
+    return text.rstrip("0").rstrip(".") if "." in text else text
+
+
 class ProductVariant(models.Model):
     """Вариант товара: конкретная форма продажи со своей ценой и наличием.
 
@@ -256,11 +262,33 @@ class ProductVariant(models.Model):
         verbose_name_plural = "Варианты товара"
         ordering = ["price"]
 
+    @property
+    def form_label(self):
+        """Короткая форма продажи без цены: «ОКС», «ЗКС 5 л», «50 л», «P9».
+
+        Растения — корневая система (+ объём для ЗКС); сопутствующие — объём/размер
+        фасовки. Если владелец задал подпись вручную (variant_label) — используем её.
+        """
+        if self.variant_label:
+            return self.variant_label
+        parts = []
+        if self.root_system:
+            # «ОКС (открытая…)» → «ОКС»; «ЗКС (закрытая…)» → «ЗКС»
+            parts.append(self.get_root_system_display().split()[0])
+        if self.volume_l is not None:
+            parts.append(f"{_trim_decimal(self.volume_l)} л")
+        if self.size_label:
+            parts.append(self.size_label)
+        return " ".join(parts) or "вариант"
+
+    @property
+    def short_label(self):
+        """Форма продажи + цена: «ОКС — 600 ₽», «ЗКС 5 л — 800 ₽». Заголовок блока в админке."""
+        price = _trim_decimal(self.price) if self.price is not None else "?"
+        return f"{self.form_label} — {price} ₽"
+
     def __str__(self):
-        label = self.variant_label or self.size_label
-        if not label and self.volume_l:
-            label = f"{self.volume_l} л"
-        return f"{self.product}: {label or 'вариант'} — {self.price} ₽"
+        return self.short_label
 
     @property
     def is_available(self):

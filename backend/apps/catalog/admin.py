@@ -86,7 +86,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     inlines = (ProductVariantInline, ProductImageInline)
 
-    list_display = ("display_name", "cultivar", "category", "kind", "is_published")
+    list_display = ("display_name", "cultivar", "category", "kind", "variants_summary", "is_published")
     list_display_links = ("display_name",)
     list_filter = ("kind", ("category", TreeRelatedFieldListFilter), "is_published")
     search_fields = ("name_ru", "name_lat", "cultivar")
@@ -107,6 +107,19 @@ class ProductAdmin(admin.ModelAdmin):
         ("Категория и тип", {"fields": ("category", "kind")}),
         ("Публикация и продавец", {"fields": ("is_published", "seller")}),
     )
+
+    def get_queryset(self, request):
+        # Подгружаем варианты одним запросом — иначе сводка делает по запросу на строку.
+        return super().get_queryset(request).prefetch_related("variants")
+
+    @admin.display(description="Варианты")
+    def variants_summary(self, obj):
+        """Сводка по вариантам прямо в списке товаров: их число и краткие формы продажи."""
+        variants = list(obj.variants.all())
+        if not variants:
+            return "—"
+        forms = "; ".join(v.form_label for v in variants)
+        return f"{len(variants)}: {forms}"
 
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         """Категорию выбираем выпадающим списком с отступами (видно вложенность дерева)."""
