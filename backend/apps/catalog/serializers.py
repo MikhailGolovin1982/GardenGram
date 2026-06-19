@@ -6,6 +6,7 @@
 Почему так — см. _scratch/PLAN_API.md, п.1.
 """
 
+from drf_spectacular.utils import extend_schema_field
 from rest_framework import serializers
 
 from .models import Category, Product, ProductImage, ProductVariant
@@ -24,6 +25,11 @@ class CategoryTreeSerializer(serializers.ModelSerializer):
         model = Category
         fields = ("id", "name", "slug", "children")
 
+    # Рекурсия: для схемы явно говорим spectacular, что children — массив таких же
+    # категорий ($ref на собственную схему), иначе тип в Swagger будет «неизвестный».
+    @extend_schema_field(
+        {"type": "array", "items": {"$ref": "#/components/schemas/CategoryTree"}}
+    )
     def get_children(self, obj):
         # get_children() у mptt возвращает кэшированных детей (из cache_tree_children),
         # если кэш есть. Контекст пробрасываем дальше — пригодится для request.
@@ -54,9 +60,11 @@ class ProductVariantSerializer(serializers.ModelSerializer):
     и «сырые» поля формы продажи (пригодятся фронту для фильтров/отображения).
     """
 
-    is_available = serializers.ReadOnlyField()
-    form_label = serializers.ReadOnlyField()
-    short_label = serializers.ReadOnlyField()
+    # Типизированные read-only поля (а не ReadOnlyField) — чтобы spectacular знал тип
+    # в схеме: is_available булево, подписи строковые.
+    is_available = serializers.BooleanField(read_only=True)
+    form_label = serializers.CharField(read_only=True)
+    short_label = serializers.CharField(read_only=True)
 
     class Meta:
         model = ProductVariant
@@ -83,7 +91,7 @@ class ProductListSerializer(serializers.ModelSerializer):
     без N+1) — здесь только объявляем их типы для вывода и схемы.
     """
 
-    display_name = serializers.ReadOnlyField()
+    display_name = serializers.CharField(read_only=True)
     category = CategoryShortSerializer(read_only=True)
     thumbnail = serializers.SerializerMethodField()
     price_from = serializers.DecimalField(
@@ -106,6 +114,7 @@ class ProductListSerializer(serializers.ModelSerializer):
             "is_available",
         )
 
+    @extend_schema_field(serializers.URLField(allow_null=True))
     def get_thumbnail(self, obj):
         # obj.images — префетчены и упорядочены по position (Meta модели),
         # поэтому первое фото = главное. Срез [:1] по готовому списку, без доп. запроса.
@@ -124,7 +133,7 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     по is_active=True (фильтр живёт в Prefetch вьюхи, не здесь).
     """
 
-    display_name = serializers.ReadOnlyField()
+    display_name = serializers.CharField(read_only=True)
     category = CategoryShortSerializer(read_only=True)
     images = ProductImageSerializer(many=True, read_only=True)
     variants = ProductVariantSerializer(many=True, read_only=True)

@@ -1,6 +1,7 @@
 """Вьюхи каталога (только чтение). См. _scratch/PLAN_API.md, п.2–5."""
 
 from django.db.models import Exists, Min, OuterRef, Prefetch, Subquery
+from drf_spectacular.utils import OpenApiParameter, extend_schema, extend_schema_view
 from mptt.templatetags.mptt_tags import cache_tree_children
 from rest_framework.filters import SearchFilter
 from rest_framework.generics import ListAPIView
@@ -23,6 +24,25 @@ class CatalogPagination(PageNumberPagination):
     page_size = 20
 
 
+@extend_schema_view(
+    list=extend_schema(
+        tags=["catalog"],
+        auth=[],  # витрина публичная — в Swagger без «замочка»
+        parameters=[
+            OpenApiParameter(
+                "category",
+                int,
+                description="ID категории. Включает товары из подкатегорий.",
+            ),
+        ],
+        description="Список опубликованных товаров (кратко). Пагинация по 20.",
+    ),
+    retrieve=extend_schema(
+        tags=["catalog"],
+        auth=[],
+        description="Карточка товара: описание, фото, активные варианты.",
+    ),
+)
 class ProductViewSet(ReadOnlyModelViewSet):
     """Только чтение: список товаров и карточка одного товара.
 
@@ -87,6 +107,11 @@ class ProductViewSet(ReadOnlyModelViewSet):
         return qs
 
 
+@extend_schema(
+    tags=["catalog"],
+    auth=[],
+    description="Дерево активных категорий (вложенное, целиком, без пагинации).",
+)
 class CategoryTreeView(ListAPIView):
     """Дерево категорий целиком (только активные узлы), без пагинации.
 
