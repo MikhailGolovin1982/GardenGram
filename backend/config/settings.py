@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     # наши
     'apps.users',
     'apps.catalog',
+    'apps.cart',
 ]
 
 MIDDLEWARE = [
