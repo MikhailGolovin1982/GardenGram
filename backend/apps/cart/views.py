@@ -10,6 +10,8 @@ from django.core.exceptions import ValidationError
 from django.db.models import Prefetch
 from django.http import Http404
 from django.shortcuts import get_object_or_404
+from drf_spectacular.types import OpenApiTypes
+from drf_spectacular.utils import OpenApiParameter, extend_schema
 from rest_framework import status
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
@@ -20,6 +22,17 @@ from .serializers import (
     AddCartItemSerializer,
     CartSerializer,
     UpdateCartItemSerializer,
+)
+
+# Заголовок с токеном гостевой корзины — для неавторизованных запросов.
+# Описываем его в схеме, чтобы в Swagger можно было ввести токен и протестировать гостя.
+CART_TOKEN_PARAM = OpenApiParameter(
+    "X-Cart-Token",
+    OpenApiTypes.UUID,
+    OpenApiParameter.HEADER,
+    required=False,
+    description="Токен гостевой корзины (для неавторизованных). "
+    "Возвращается в поле token при первом добавлении.",
 )
 
 # Представление пустой корзины, когда строки в БД ещё нет (гость без токена на GET).
@@ -60,10 +73,22 @@ class CartView(APIView):
 
     permission_classes = [AllowAny]
 
+    @extend_schema(
+        tags=["cart"],
+        parameters=[CART_TOKEN_PARAM],
+        responses=CartSerializer,
+        description="Показать текущую корзину (по аккаунту или токену гостя).",
+    )
     def get(self, request):
         cart = Cart.objects.resolve(request, create=False)
         return _cart_response(cart, request)
 
+    @extend_schema(
+        tags=["cart"],
+        parameters=[CART_TOKEN_PARAM],
+        responses=CartSerializer,
+        description="Очистить корзину: удалить все строки (саму корзину сохраняем).",
+    )
     def delete(self, request):
         cart = Cart.objects.resolve(request, create=False)
         if cart is not None:
@@ -76,6 +101,14 @@ class CartItemView(APIView):
 
     permission_classes = [AllowAny]
 
+    @extend_schema(
+        tags=["cart"],
+        parameters=[CART_TOKEN_PARAM],
+        request=AddCartItemSerializer,
+        responses=CartSerializer,
+        description="Добавить вариант в корзину. Если вариант уже есть — увеличить количество. "
+        "Класть можно только доступные варианты (активные и в наличии).",
+    )
     def post(self, request):
         serializer = AddCartItemSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -110,6 +143,13 @@ class CartItemDetailView(APIView):
             raise Http404("Корзина не найдена.")
         return cart, get_object_or_404(cart.items, pk=pk)
 
+    @extend_schema(
+        tags=["cart"],
+        parameters=[CART_TOKEN_PARAM],
+        request=UpdateCartItemSerializer,
+        responses=CartSerializer,
+        description="Изменить количество строки корзины.",
+    )
     def patch(self, request, pk):
         cart, item = self._get_item_or_404(request, pk)
         serializer = UpdateCartItemSerializer(data=request.data)
@@ -118,6 +158,12 @@ class CartItemDetailView(APIView):
         item.save(update_fields=["quantity", "updated_at"])
         return _cart_response(cart, request)
 
+    @extend_schema(
+        tags=["cart"],
+        parameters=[CART_TOKEN_PARAM],
+        responses=CartSerializer,
+        description="Удалить строку из корзины.",
+    )
     def delete(self, request, pk):
         cart, item = self._get_item_or_404(request, pk)
         item.delete()
@@ -132,6 +178,14 @@ class CartMergeView(APIView):
 
     permission_classes = [IsAuthenticated]
 
+    @extend_schema(
+        tags=["cart"],
+        parameters=[CART_TOKEN_PARAM],
+        request=None,
+        responses=CartSerializer,
+        description="Слить гостевую корзину (токен в X-Cart-Token) в корзину пользователя. "
+        "Совпавшие варианты — количества суммируются. Вызывать после логина.",
+    )
     def post(self, request):
         token = request.headers.get("X-Cart-Token")
         guest_cart = None
