@@ -1,0 +1,10 @@
+[
+{
+  "model": "core.shopsettings",
+  "pk": 1,
+  "fields": {
+    "free_delivery_threshold": "3000.00",
+    "local_delivery_price": "300.00"
+  }
+}
+]
