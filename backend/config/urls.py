@@ -22,6 +22,9 @@ urlpatterns = [
     # cart (гостевая + пользовательская корзина)
     path('api/v1/cart/', include('apps.cart.urls')),
 
+    # orders (оформление заказа: гость + пользователь)
+    path('api/v1/orders/', include('apps.orders.urls')),
+
     # docs
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
