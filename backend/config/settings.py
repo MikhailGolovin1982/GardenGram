@@ -101,6 +101,11 @@ SPECTACULAR_SETTINGS = {
         }
     },
     "SECURITY": [{"BearerAuth": []}],
+    # Один и тот же набор способов доставки используется в нескольких полях (заказ, превью) —
+    # задаём enum явное имя, чтобы схема была однозначной.
+    "ENUM_NAME_OVERRIDES": {
+        "DeliveryMethodEnum": "apps.core.models.DeliveryMethod",
+    },
 }
 
 ROOT_URLCONF = "config.urls"
