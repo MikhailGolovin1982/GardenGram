@@ -220,6 +220,278 @@
   }
 },
 {
+  "model": "catalog.product",
+  "pk": 51,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Пинки Промис\"",
+    "cultivar": "Пинки Промис",
+    "name_lat": "Hydrangea paniculata 'Living Pinky Promise'",
+    "description": "Гортензия метельчатая «Пинки Промис» (Hydrangea paniculata 'Living Pinky Promise') — компактный кустарник высотой 0,6–0,7 м и шириной 0,7–0,8 м. Обладает удивительно прочными побегами, поэтому куст не разваливается и сохраняет форму даже в период обильного цветения. Соцветия пышные, длиной 15–20 см, состоят из стерильных цветков. В начале цветения цветки ослепительно-белые, затем окрашиваются в нежно-розовые тона; к концу цветения становятся насыщенно-розовыми, с лаймовым центром и жёлто-зелёными цветками внутри метёлки. Цветёт с июля по октябрь.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.396Z",
+    "updated_at": "2026-06-24T10:52:00.396Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 52,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Диамантино\"",
+    "cultivar": "Диамантино",
+    "name_lat": "Hydrangea paniculata 'Diamantino'",
+    "description": "Гортензия метельчатая «Диамантино» (Hydrangea paniculata 'Diamantino') — сорт с плотным кустом вертикальной, слегка расклешённой формы, высотой 1,2–1,4 м и шириной 1,0–1,2 м. Побеги прямые, довольно жёсткие, поэтому куст не требует подвязки. Соцветия длиной 25–30 см, очень плотные, густые метёлки, состоящие из стерильных цветков. В начале цветения сорт имеет необычную жёлто-зелёную и золотистую окраску, затем становится чисто-белым, а к концу цветения лепестки окрашиваются в светло-розовый цвет. Зацветает довольно рано — с середины июня; цветение обильное и продолжительное, до октября. Особенности выращивания: очень технологичный сорт, легко выращивается в контейнере благодаря устойчивой, неразваливающейся форме. Хорошо адаптируется к различным типам почв, предпочитает солнечные места, но растёт и в полутени. Применение: великолепен в композициях садов непрерывного цветения, создаёт разнообразные цветовые штрихи от зелёного до белого и розового, прекрасно сочетается с многолетними цветами и отлично смотрится как солитер на газоне.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.409Z",
+    "updated_at": "2026-06-24T10:52:00.409Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 53,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Конфетти\"",
+    "cultivar": "Конфетти",
+    "name_lat": "Hydrangea paniculata 'Confetti'",
+    "description": "Гортензия метельчатая «Конфетти» (Hydrangea paniculata 'Confetti') — кустарник высотой 1,2–1,5 м; в условиях средней полосы обычно достигает 1,2–1,3 м. Крона широкая, симметричная, слегка раскидистая. Побеги прямые и жёсткие, растут вертикально, поэтому куст хорошо держит форму, обильно цветёт, не разваливается и не требует подвязки. Соцветия пирамидальные, длиной 25–30 см, состоят из стерильных и фертильных цветков; вершина метёлки острая. Стерильные цветки крупные, около 4–5 см в диаметре, располагаются плотным ровным каскадом и при полном раскрытии почти перекрывают фертильные. В начале цветения цветки белые и долго сохраняют белую окраску, к концу цветения слегка розовеют. Листья тёмно-зелёные, с утолщёнными прожилками и светлыми кончиками. Сорт устойчивый, зимостойкий; предпочитает солнечные места, но способен адаптироваться к полутени. Подходит для одиночных и групповых посадок, живых изгородей, различных садовых композиций; технологичен для контейнерного выращивания.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.420Z",
+    "updated_at": "2026-06-24T10:52:00.420Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 54,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Коттон Крем\"",
+    "cultivar": "Коттон Крем",
+    "name_lat": "Hydrangea paniculata 'Living Cotton Cream'",
+    "description": "Гортензия метельчатая «Коттон Крем» (Hydrangea paniculata 'Living Cotton Cream') — компактный сорт, образующий аккуратный куст высотой и шириной 0,6–0,8 м. Соцветия плотные, преимущественно из стерильных цветков; при распускании зеленоватые, затем кремовые, а к концу цветения приобретают лёгкий розовый оттенок. Сорт зимостойкий; в средней полосе хорошо зимует, при этом рекомендованы мульчирование и посадка в защищённом от ветра месте. Предпочитает солнечное местоположение, но переносит полутень. Подходит для контейнерного выращивания, озеленения балконов, террас и зон патио.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.430Z",
+    "updated_at": "2026-06-24T10:52:00.430Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 55,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Литл Блоссом\"",
+    "cultivar": "Литл Блоссом",
+    "name_lat": "Hydrangea paniculata 'Living Little Blossom'",
+    "description": "Гортензия метельчатая «Литл Блоссом» (Hydrangea paniculata 'Living Little Blossom') — компактный сорт высотой 0,6–0,8 м и диаметром 0,6–0,7 м. Побеги яркие, красно-коричневые, прочные и жёсткие, хорошо удерживают крупные соцветия, поэтому куст не разваливается во время цветения. Листья тёмно-зелёные, с красноватыми дуговидными жилками и мелкозубчатым краем. Соцветия — крупные плотные метёлки пирамидальной формы со слегка заострённой вершиной, состоящие преимущественно из стерильных цветков. В начале цветения они ослепительно-белые и кремовые, а к концу приобретают лёгкий розоватый оттенок, главным образом в нижней части соцветия. Цветёт с июля по сентябрь. Сорт зимостойкий. Подходит для одиночных и групповых посадок, контейнерного выращивания, оформления патио и балконов, а также для срезки и сухих букетов.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.441Z",
+    "updated_at": "2026-06-24T10:52:00.441Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 56,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Пинк энд Роуз\"",
+    "cultivar": "Пинк энд Роуз",
+    "name_lat": "Hydrangea paniculata 'Pink & Rose'",
+    "description": "Гортензия метельчатая «Пинк энд Роуз» (Hydrangea paniculata 'Pink & Rose') — компактный кустарник высотой 1,2–1,3 м с красивой симметричной кроной и сильными, прочными побегами, которые хорошо удерживают крупные соцветия: куст не разваливается и не требует подвязки. Соцветия пышные, крупные; в начале цветения белые, затем становятся нежно-розовыми и к концу сезона приобретают ярко-розовую окраску. Цветёт с июля по сентябрь. Сорт светолюбив, но хорошо растёт и в полутени; отличается высокой зимостойкостью, однако молодые растения на зиму желательно укрывать. Подходит для одиночных и групповых посадок, живых изгородей, садовых композиций и выращивания в качестве солитера.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.453Z",
+    "updated_at": "2026-06-24T10:52:00.453Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 57,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Пастель Грин\"",
+    "cultivar": "Пастель Грин",
+    "name_lat": "Hydrangea paniculata 'Pastelgreen'",
+    "description": "Гортензия метельчатая «Пастель Грин» (Hydrangea paniculata 'Renxolor', торговое название Pastelgreen®) — компактный сорт с симметричной кроной: высота 1–1,2 м, ширина 0,8–1 м. Побеги прочные, прямые, красно-коричневые, со слабым боковым ветвлением. Соцветия — пышные конусовидные метёлки длиной 15–20 см, состоящие из фертильных и стерильных цветков. В начале цветения окраска сливочно-белая с жёлто-зелёным центром; затем появляются зелёные, кремовые и розовые тона, а отдельные соцветия могут приобретать винно-красный оттенок. Цветёт с первой половины июля практически до октября. Предпочитает солнечное место, но переносит полутень; зимостойкий сорт (USDA 4). Подходит для одиночных и групповых посадок и выращивания в контейнерах.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.466Z",
+    "updated_at": "2026-06-24T10:52:00.466Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 58,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Вимс Ред\"",
+    "cultivar": "Вимс Ред",
+    "name_lat": "Hydrangea paniculata 'Wim's Red'",
+    "description": "Гортензия метельчатая «Вимс Ред» (Hydrangea paniculata 'Wim's Red') — прямостоячий компактный куст высотой около 1,7–2,0 м и диаметром кроны 1,5–1,7 м. Побеги сильные, хорошо разветвлённые, толстые и прямые, тёмно-красные, особенно яркие к осени. Листья крупные, тёмно-зелёные с красноватым оттенком. Сорт устойчив к переувлажнению почвы. Соцветия крупные, высотой 25–30 см, узкопирамидальные, достаточно рыхлые и ажурные; содержат примерно равное количество стерильных и фертильных цветков. Цветки при распускании белые, затем постепенно меняют окраску, а осенью становятся густо пурпурно-бордовыми, иногда с голубоватой дымкой.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.476Z",
+    "updated_at": "2026-06-24T10:52:00.476Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 59,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Сандей Фрайз\"",
+    "cultivar": "Сандей Фрайз",
+    "name_lat": "Hydrangea paniculata 'Sundae Fraise'",
+    "description": "Карликовый сорт с плотным, густым, компактным кустом симметричной формы высотой и шириной 1–1,2 м. Побеги коричнево-бурые, листья ярко-зелёные, аккуратные, с волнистым краем и пурпурным жилкованием. Соцветия плотные, 20–25 см, ширококонические, со звездчатыми стерильными цветками. В начале цветения зеленовато-белые, к августу приобретают розовую окраску цвета клубничного мороженого; интенсивность окраски зависит от погодных условий и типа почвы. Цветение продолжительное и обильное. Сорт неприхотлив, хорошо развивается на разных типах почв, переносит полутень, но предпочитает хорошо освещённые места. Для обильного цветения рекомендуется короткая весенняя обрезка. Пригоден для выращивания в контейнерах, зимует без укрытия. Подходит для малых садов, патио, балконов и миксбордеров.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.486Z",
+    "updated_at": "2026-06-24T10:52:00.486Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 60,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Полар Бир\"",
+    "cultivar": "Полар Бир",
+    "name_lat": "Hydrangea paniculata 'Polar Bear'",
+    "description": "Гортензия метельчатая «Полар Бир» (Hydrangea paniculata 'Polar Bear') — компактный куст высотой 1,8–2,0 м и шириной 1,8–1,9 м. Соцветия очень крупные, конусовидные, длиной 35–40 см и более, состоят преимущественно из стерильных цветков с четырьмя округлыми лепестками. В начале цветения верхушка соцветия зеленовато-фисташковая, затем цветки становятся белыми, а к осени приобретают лёгкий розоватый оттенок. Цветёт с июля по октябрь. Предпочитает хорошо освещённые, защищённые от сквозняков места; подходит для одиночных и групповых посадок.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.496Z",
+    "updated_at": "2026-06-24T10:52:00.496Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 61,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Канделайт\"",
+    "cultivar": "Канделайт",
+    "name_lat": "Hydrangea paniculata 'Candlelight'",
+    "description": "Гортензия метельчатая «Канделайт» (Hydrangea paniculata 'Candlelight') — компактный кустарник высотой 1,0–1,3 м и шириной 0,9–1,1 м. Побеги сильные, прочные, тёмно-бордовые, почти фиолетовые в верхней части, эффектно контрастируют с пышными соцветиями. Листья ярко-зелёные, удлинённо-овальные, с мелкозубчатым краем. Соцветия состоят преимущественно из стерильных цветков с 4–5 слегка удлинёнными лепестками; в начале цветения окраска жёлто-зелёная, затем становится кремово-белой и к осени приобретает розоватый оттенок. Цветёт продолжительно, с июля по октябрь. Подходит для зимних букетов. Предпочитает богатые гумусом, хорошо дренированные почвы; лучше развивается на солнечных местах, но может адаптироваться к полутени. Зимостойка. Универсальна для живых изгородей, смешанных композиций и одиночных посадок.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.506Z",
+    "updated_at": "2026-06-24T10:52:00.506Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 62,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Пинки Винки\"",
+    "cultivar": "Пинки Винки",
+    "name_lat": "Hydrangea paniculata 'Pinky-Winky'",
+    "description": "Гортензия метельчатая «Пинки Винки» (Hydrangea paniculata 'Pinky-Winky') — известный сорт с округлой, вазообразной формой куста и очень жёсткими, прочными, умеренно толстыми побегами тёмно-вишнёвого цвета. Высота куста 1,5–1,8 м, ширина 1,5–1,7 м. Листья ярко-зелёные, аккуратные, удлинённо-яйцевидные, с заострённой верхушкой и пильчатым краем; красные черешки создают выразительный контраст. Соцветия конусовидные, с широким основанием, длиной 25–30 см. Цветки раскрываются постепенно: от белых до интенсивно тёмно-розовых и винно-красных к осени, поэтому на одном кусте одновременно заметна многоцветная гамма. Цветёт обильно с августа по октябрь, сохраняя декоративность поздней осенью. Сорт неприхотлив, хорошо адаптируется к различным типам почв, переносит кратковременную сухость и переувлажнение, не требует опоры. Подходит для одиночных и групповых посадок, живых изгородей, контейнерного выращивания и срезки.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.519Z",
+    "updated_at": "2026-06-24T10:52:00.519Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 63,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Киушу\"",
+    "cultivar": "Киушу",
+    "name_lat": "Hydrangea paniculata 'Kyushu'",
+    "description": "Гортензия метельчатая «Киушу» (Hydrangea paniculata 'Kyushu') — высокорослый сорт с веерообразной кроной, достигающий 2,5–3,0 м в высоту и ширину. Побеги прочные, жёсткие, очень толстые, зеленовато-коричневые; куст быстро растёт. Листья тёмно-зелёные, с красноватыми черешками. Соцветия удлинённые, конусовидные, длиной 15–20 см, состоят из белых стерильных и фертильных ароматных цветков; крупные стерильные цветки достигают 4–5 см в диаметре. Медонос. Цветёт с августа по октябрь. Сорт отличается высокой зимостойкостью, хорошо адаптируется к различным типам почв и развивается как на солнечных, так и на полузатенённых участках. Подходит для озеленения парков и скверов, живых изгородей и одиночных посадок на газоне.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.539Z",
+    "updated_at": "2026-06-24T10:52:00.539Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 64,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Пинк Даймонд\"",
+    "cultivar": "Пинк Даймонд",
+    "name_lat": "Hydrangea paniculata 'Pink Diamond'",
+    "description": "Гортензия метельчатая «Пинк Даймонд» (Hydrangea paniculata 'Pink Diamond') — кустарник высотой 1,7–2,0 м и диаметром кроны 1,6–1,8 м, с прямыми, почти неразветвлёнными ветвями и яркими красно-бурыми побегами. Листья плотные, тёмно-зелёные, шершавые, с мелкозубчатым краем. Соцветия узкопирамидальные, длиной 25–30 см, состоят из стерильных и фертильных цветков; сначала белые, затем по мере распускания розовеют, к осени становятся тёмно-розовыми. Цветёт с июля по сентябрь. Предпочитает слабокислые, плодородные, хорошо дренированные и умеренно влажные почвы. Подходит для одиночных и групповых посадок, неформованных живых изгородей.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.581Z",
+    "updated_at": "2026-06-24T10:52:00.581Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 65,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Меджикал Мунлайт\"",
+    "cultivar": "Меджикал Мунлайт",
+    "name_lat": "Hydrangea paniculata 'Magical Moonlight'",
+    "description": "Гортензия метельчатая (Hydrangea paniculata 'Magical Moonlight'). Название сорта в переводе означает «Волшебный лунный свет». Куст достигает 1,3–2,2 м в высоту и 1,1–1,2 м в ширину. Зацветает в июле и сохраняет декоративность до осени. Ароматные, очень крупные, до 40 см, плотные соцветия располагаются на сильных жёстких побегах. В начале цветения они имеют зеленовато-лаймовый оттенок, затем становятся белыми, а к концу цветения могут приобретать слегка розоватый тон. Особенности выращивания: предпочитает солнечное место, но хорошо переносит полутень; любит почву, богатую гумусом, при этом адаптируется к различным типам почв. Зимостойка, отзывчива на подкормки и обильный полив. Для обильного цветения рекомендуется регулярная ранневесенняя обрезка. Применение: эффектна как солитер и в композициях с вечнозелёными растениями.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.597Z",
+    "updated_at": "2026-06-24T10:52:00.597Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 66,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Лаймлайт\"",
+    "cultivar": "Лаймлайт",
+    "name_lat": "Hydrangea paniculata 'Limelight'",
+    "description": "Гортензия метельчатая «Лаймлайт» (Hydrangea paniculata 'Limelight') — крупный, компактный куст высотой около 1,6–2,2 м и шириной 1,8–2,0 м, с прочными толстыми побегами, не требующими опоры. Соцветия плотные, конусовидные, длиной 25–30 см: при распускании зеленовато-лимонные, затем белеют и к завершению цветения приобретают лёгкий розоватый оттенок. Цветёт обильно с середины лета до октября. Предпочитает хорошо освещённые, защищённые от сквозняков места; сорт зимостойкий и подходит для одиночных посадок, композиций с многолетниками и срезки.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.607Z",
+    "updated_at": "2026-06-24T10:52:00.607Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 67,
+  "fields": {
+    "category": 6,
+    "kind": "PLANT",
+    "name_ru": "Гортензия \"Эрли Сенсейшен\"",
+    "cultivar": "Эрли Сенсейшен",
+    "name_lat": "Hydrangea paniculata 'Early Sensation'",
+    "description": "Гортензия метельчатая «Эрли Сенсейшен» (Hydrangea paniculata 'Early Sensation') — красивоцветущий кустарник высотой 1,5–1,7 м и шириной до 2 м, с плотной, нередко асимметричной кроной. Листья зелёные, шершавые, эллиптические; осенью приобретают тёмно-пурпурную окраску. Зацветает в начале июля и цветёт 2–3 месяца. Кистевидные соцветия высотой 15–20 см рыхлые, широкие, состоят из крупных стерильных и фертильных цветков: сначала кремово-белые, затем быстро розовеют и к осени становятся винно-красными. Предпочитает плодородные влажные почвы со слабокислой или нейтральной реакцией. Зимостойка; для обильного цветения рекомендуется ежегодная обрезка. Подходит для одиночных посадок, композиций и садов непрерывного цветения.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-24T10:52:00.617Z",
+    "updated_at": "2026-06-24T10:52:00.617Z"
+  }
+},
+{
   "model": "catalog.productimage",
   "pk": 1,
   "fields": {
@@ -379,6 +651,550 @@
   "fields": {
     "product": 16,
     "price": "450.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 131,
+  "fields": {
+    "product": 51,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 132,
+  "fields": {
+    "product": 51,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 133,
+  "fields": {
+    "product": 52,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 134,
+  "fields": {
+    "product": 52,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 135,
+  "fields": {
+    "product": 53,
+    "price": "550.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 136,
+  "fields": {
+    "product": 53,
+    "price": "450.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 137,
+  "fields": {
+    "product": 54,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 138,
+  "fields": {
+    "product": 54,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 139,
+  "fields": {
+    "product": 55,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 140,
+  "fields": {
+    "product": 55,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 141,
+  "fields": {
+    "product": 56,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 142,
+  "fields": {
+    "product": 56,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 143,
+  "fields": {
+    "product": 57,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 144,
+  "fields": {
+    "product": 57,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 145,
+  "fields": {
+    "product": 58,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 146,
+  "fields": {
+    "product": 58,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 147,
+  "fields": {
+    "product": 59,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 148,
+  "fields": {
+    "product": 59,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 149,
+  "fields": {
+    "product": 60,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 150,
+  "fields": {
+    "product": 60,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 151,
+  "fields": {
+    "product": 61,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 152,
+  "fields": {
+    "product": 61,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 153,
+  "fields": {
+    "product": 62,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 154,
+  "fields": {
+    "product": 62,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 155,
+  "fields": {
+    "product": 63,
+    "price": "800.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 156,
+  "fields": {
+    "product": 63,
+    "price": "700.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 157,
+  "fields": {
+    "product": 64,
+    "price": "800.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 158,
+  "fields": {
+    "product": 64,
+    "price": "700.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 159,
+  "fields": {
+    "product": 65,
+    "price": "800.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 160,
+  "fields": {
+    "product": 65,
+    "price": "700.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 161,
+  "fields": {
+    "product": 66,
+    "price": "800.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 162,
+  "fields": {
+    "product": 66,
+    "price": "700.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 163,
+  "fields": {
+    "product": 67,
+    "price": "600.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 164,
+  "fields": {
+    "product": 67,
+    "price": "500.00",
     "availability_status": "OUT_OF_STOCK",
     "quantity": null,
     "is_active": true,
