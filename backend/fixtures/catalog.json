@@ -8,7 +8,7 @@
     "slug": "dekorativnye-rasteniya",
     "is_active": true,
     "lft": 1,
-    "rght": 8,
+    "rght": 10,
     "tree_id": 1,
     "level": 0
   }
@@ -137,6 +137,20 @@
     "rght": 4,
     "tree_id": 1,
     "level": 2
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 15,
+  "fields": {
+    "name": "Лапчатки",
+    "parent": 4,
+    "slug": "",
+    "is_active": true,
+    "lft": 8,
+    "rght": 9,
+    "tree_id": 1,
+    "level": 1
   }
 },
 {
@@ -489,6 +503,86 @@
     "seller": null,
     "created_at": "2026-06-24T10:52:00.617Z",
     "updated_at": "2026-06-24T10:52:00.617Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 73,
+  "fields": {
+    "category": 15,
+    "kind": "PLANT",
+    "name_ru": "Лапчатка «Голд Стар»",
+    "cultivar": "Голд Стар",
+    "name_lat": "Potentilla fruticosa 'Goldstar'",
+    "description": "Лапчатка кустарниковая «Голдстар» (Potentilla fruticosa 'Goldstar') — компактный густоветвистый кустарник с округлой кроной, высотой до 0,8 м и диаметром до 1,2 м. Один из лучших сортов лапчатки кустарниковой. Цветёт крупными ярко-жёлтыми цветками до 5 см в диаметре с июня по октябрь. Листья серо-зелёные, состоят из 3–7 ланцетно-яйцевидных листочков длиной до 3 см. Засухоустойчив, нетребователен к почвам, светолюбив, но переносит небольшое затенение. Зимостоек, хорошо переносит городские условия.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:38:16.738Z",
+    "updated_at": "2026-06-26T09:38:16.738Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 74,
+  "fields": {
+    "category": 15,
+    "kind": "PLANT",
+    "name_ru": "Лапчатка кустарниковая (Курильский чай)",
+    "cultivar": "",
+    "name_lat": "Potentilla fruticosa L.",
+    "description": "Лапчатка кустарниковая, или курильский чай (Potentilla fruticosa L.), — листопадный декоративный кустарник с плотной округлой кроной и мелкими перистыми листьями. В садовой практике растение также известно как курильский чай; используется в озеленении, живых изгородях и смешанных посадках. Цветёт продолжительно ярко-жёлтыми цветками. Светолюбива, переносит лёгкое затенение, зимостойка и нетребовательна к почвам.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:38:16.750Z",
+    "updated_at": "2026-06-26T09:38:16.750Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 75,
+  "fields": {
+    "category": 15,
+    "kind": "PLANT",
+    "name_ru": "Лапчатка «Примроуз Бьюти»",
+    "cultivar": "Примроуз Бьюти",
+    "name_lat": "Potentilla fruticosa 'Primrose Beauty'",
+    "description": "Лапчатка кустарниковая «Примроуз Бьюти» (Potentilla fruticosa 'Primrose Beauty') — компактный листопадный кустарник высотой 0,8–1,2 м с раскидистой округлой кроной диаметром до 1,2 м. Листья зелёные, шелковистые. Цветёт продолжительно и обильно с середины июня до середины сентября многочисленными мелкими кремово-жёлтыми цветками с более насыщенной жёлтой серединой. Светолюбива, зимостойка, предпочитает хорошо дренированные почвы и подходит для одиночных и групповых посадок.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:38:16.765Z",
+    "updated_at": "2026-06-26T09:38:16.765Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 76,
+  "fields": {
+    "category": 15,
+    "kind": "PLANT",
+    "name_ru": "Лапчатка «Кобольд»",
+    "cultivar": "Кобольд",
+    "name_lat": "Potentilla fruticosa 'Kobold'",
+    "description": "Лапчатка кустарниковая «Кобольд» (Potentilla fruticosa 'Kobold') — компактный листопадный кустарник высотой до 0,8 м и шириной до 1,2 м с округлой или подушковидной кроной. Цветёт обильно и продолжительно ярко-жёлтыми цветками с июня по сентябрь. Листва серебристо-зелёная. Предпочитает солнечные участки, но переносит лёгкую полутень. Важно не допускать пересушивания почвы; растение хорошо отзывается на периодическую обрезку и подкормки.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:38:16.776Z",
+    "updated_at": "2026-06-26T09:38:16.776Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 77,
+  "fields": {
+    "category": 15,
+    "kind": "PLANT",
+    "name_ru": "Лапчатка «Голдфингер»",
+    "cultivar": "Голдфингер",
+    "name_lat": "Potentilla fruticosa 'Goldfinger'",
+    "description": "Лапчатка кустарниковая «Голдфингер» (Potentilla fruticosa 'Goldfinger') — декоративный листопадный кустарник высотой до 1–1,5 м с шаровидной кроной диаметром до 1,5 м. Листья тёмно-зелёные, резные и выразительные. Во время цветения побеги покрываются яркими золотисто-жёлтыми цветками до 5 см в диаметре.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:38:16.787Z",
+    "updated_at": "2026-06-26T09:38:16.787Z"
   }
 },
 {
@@ -1195,6 +1289,166 @@
   "fields": {
     "product": 67,
     "price": "500.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 175,
+  "fields": {
+    "product": 73,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 176,
+  "fields": {
+    "product": 73,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 177,
+  "fields": {
+    "product": 74,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 178,
+  "fields": {
+    "product": 74,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 179,
+  "fields": {
+    "product": 75,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 180,
+  "fields": {
+    "product": 75,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 181,
+  "fields": {
+    "product": 76,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 182,
+  "fields": {
+    "product": 76,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 183,
+  "fields": {
+    "product": 77,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 184,
+  "fields": {
+    "product": 77,
+    "price": "300.00",
     "availability_status": "OUT_OF_STOCK",
     "quantity": null,
     "is_active": true,
