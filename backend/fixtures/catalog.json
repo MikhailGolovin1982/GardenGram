@@ -8,7 +8,7 @@
     "slug": "dekorativnye-rasteniya",
     "is_active": true,
     "lft": 1,
-    "rght": 10,
+    "rght": 12,
     "tree_id": 1,
     "level": 0
   }
@@ -149,6 +149,20 @@
     "is_active": true,
     "lft": 8,
     "rght": 9,
+    "tree_id": 1,
+    "level": 1
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 17,
+  "fields": {
+    "name": "Спиреи",
+    "parent": 4,
+    "slug": "",
+    "is_active": true,
+    "lft": 10,
+    "rght": 11,
     "tree_id": 1,
     "level": 1
   }
@@ -583,6 +597,166 @@
     "seller": null,
     "created_at": "2026-06-26T09:38:16.787Z",
     "updated_at": "2026-06-26T09:38:16.787Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 88,
+  "fields": {
+    "category": 17,
+    "kind": "PLANT",
+    "name_ru": "Спирея «Дартс Ред»",
+    "cultivar": "Дартс Ред",
+    "name_lat": "Spiraea japonica 'Dart's Red'",
+    "description": "Спирея японская «Дартс Ред» (Spiraea japonica 'Dart's Red') — компактный листопадный кустарник с округлой кроной, высотой и шириной 0,6–0,8 м. Листья тёмно-зелёные, осенью приобретают жёлто-оранжевые и пурпурные тона. Цветки от бледно- до тёмно-пурпурно-розовых, собраны в щитковидные соцветия; цветение продолжительное, с июля до октября. Сорт зимостоек, предпочитает плодородные умеренно влажные почвы, хорошо растёт на солнце и в лёгкой полутени. Подходит для групповых и одиночных посадок, бордюров, миксбордеров и городского озеленения.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:48:09.604Z",
+    "updated_at": "2026-06-26T09:48:09.604Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 89,
+  "fields": {
+    "category": 17,
+    "kind": "PLANT",
+    "name_ru": "Спирея «Вангутта»",
+    "cultivar": "",
+    "name_lat": "Spiraea × vanhouttei",
+    "description": "Спирея Вангутта (Spiraea × vanhouttei) — быстрорастущий листопадный декоративный кустарник, гибрид спиреи кантонской и спиреи трёхлопастной. Взрослые ветви дугообразно изгибаются вниз, образуя раскидистую крону. Мелкие белые цветки собраны в многочисленные полушаровидные соцветия; цветение приходится на середину июня — начало июля, иногда повторяется в июле—августе. Сорт относительно теневынослив, зимостоек, хорошо растёт на влажных плодородных почвах; подходит для живых изгородей, одиночных и групповых посадок, оформления водоёмов и городского озеленения.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:48:09.615Z",
+    "updated_at": "2026-06-26T09:48:09.616Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 90,
+  "fields": {
+    "category": 17,
+    "kind": "PLANT",
+    "name_ru": "Спирея «Сноумаунд»",
+    "cultivar": "Сноумаунд",
+    "name_lat": "Spiraea nipponica 'Snowmound'",
+    "description": "Спирея ниппонская «Сноумаунд» (Spiraea nipponica 'Snowmound') — компактный листопадный кустарник высотой до 1,5 м с густой округлой кроной и мелкими зелёными листьями. Обильно цветёт в конце мая — начале июня белыми цветками, собранными в крупные выпуклые щитковидные соцветия, почти полностью покрывающие побеги. Светолюбива, предпочитает влажные плодородные почвы, хорошо переносит обрезку и быстро восстанавливается. Подходит для одиночных и групповых посадок, бордюров и использования как почвопокровное растение.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:48:09.624Z",
+    "updated_at": "2026-06-26T09:48:09.624Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 91,
+  "fields": {
+    "category": 17,
+    "kind": "PLANT",
+    "name_ru": "Спирея Билларда",
+    "cultivar": "",
+    "name_lat": "Spiraea × billardii",
+    "description": "Спирея Билларда (Spiraea × billardii) — декоративный листопадный кустарник, гибрид спиреи Дугласа и спиреи иволистной. Куст выше 2 м, с раскидистой кроной; побеги прямые и жёсткие. Листья широколанцетные, серовато-войлочные снизу. Цветки насыщенно-розовые, собраны в узкие рыхлые пирамидальные метёлки до 20 см; цветёт с июля до заморозков. Морозостойка, к почвам неприхотлива, лучше развивается на солнечных участках, переносит лёгкое затенение. Даёт корневую поросль; подходит для свободнорастущих живых изгородей, опушечных посадок и укрепления склонов.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:48:09.632Z",
+    "updated_at": "2026-06-26T09:48:09.632Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 92,
+  "fields": {
+    "category": 17,
+    "kind": "PLANT",
+    "name_ru": "Спирея «Голд Флейм»",
+    "cultivar": "Голд Флейм",
+    "name_lat": "Spiraea japonica 'Goldflame'",
+    "description": "Спирея японская «Голд Флейм» (Spiraea japonica 'Goldflame') — компактный листопадный кустарник с плотной округлой кроной, высотой и шириной до 0,7–0,8 м. Молодые листья медно-оранжевые, затем становятся золотисто-жёлтыми и жёлто-зелёными; осенью приобретают бронзовые тона. Цветки лилово-розовые, собраны в плоские щитковидные соцветия; цветение продолжается с июня до августа. Сорт зимостоек, светолюбив, но растёт и в полутени; к почвам нетребователен, лучше развивается на рыхлых плодородных умеренно влажных почвах. Подходит для одиночных и групповых посадок, бордюров, цветников, каменистых садов и городского озеленения.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:48:09.645Z",
+    "updated_at": "2026-06-26T09:48:09.645Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 93,
+  "fields": {
+    "category": 17,
+    "kind": "PLANT",
+    "name_ru": "Спирея «Тор»",
+    "cultivar": "Тор",
+    "name_lat": "Spiraea betulifolia 'Tor'",
+    "description": "Спирея берёзолистная «Тор» (Spiraea betulifolia 'Tor') — компактный листопадный кустарник с плотной округлой кроной высотой и шириной около 0,7–0,9 м. Побеги прямостоячие, коричневые; листья тёмно-зелёные, округло-овальные, с сизоватой нижней стороной, осенью приобретают яркие оранжевые, красные и пурпурные оттенки. Белые цветки собраны в плотные щитковидные соцветия, цветение приходится на июнь. Сорт зимостоек, засухоустойчив, хорошо растёт на солнце; подходит для одиночных и групповых посадок, бордюров, рокариев и городского озеленения.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:48:09.663Z",
+    "updated_at": "2026-06-26T09:48:09.663Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 94,
+  "fields": {
+    "category": 17,
+    "kind": "PLANT",
+    "name_ru": "Спирея «Меджик Карпет»",
+    "cultivar": "Меджик Карпет",
+    "name_lat": "Spiraea japonica 'Magic Carpet'",
+    "description": "Спирея японская «Меджик Карпет» (Spiraea japonica 'Magic Carpet') — компактный плотный листопадный кустарник высотой до 0,6 м и шириной до 0,9 м. Молодые листья розоватые, затем становятся золотисто-жёлтыми с оранжевыми оттенками на верхушках побегов; осенью приобретают рубиново-каштановые тона. Ярко-розовые цветки собраны в плоские щитковидные соцветия; цветение начинается в конце июня. Сорт зимостоек, неприхотлив, хорошо растёт на солнечных местах и в лёгкой полутени; подходит для групповых посадок, рабаток, рокариев, бордюров и небольших садов.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:48:09.674Z",
+    "updated_at": "2026-06-26T09:48:09.674Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 95,
+  "fields": {
+    "category": 17,
+    "kind": "PLANT",
+    "name_ru": "Спирея Бумальда",
+    "cultivar": "",
+    "name_lat": "Spiraea × bumalda",
+    "description": "Спирея Бумальда (Spiraea × bumalda) — листопадный декоративный кустарник, традиционно рассматриваемый как гибрид между спиреей японской и белоцветковой. Куст невысокий, до 0,8 м, с изящной округлой кроной и прямостоячими, слегка ребристыми побегами. Листья яйцевидно-ланцетные, с острым двоякопильчатым краем. Цветки от бледно-розовых до тёмно-гвоздично-розовых, собраны в щитковидные соцветия; цветение продолжительное, около 50 дней летом. Растение морозостойкое, нетребовательное к почвам, лучше развивается на солнечных или слегка притенённых участках. Подходит для одиночных и групповых посадок, бордюров, цветников и городского озеленения.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:48:09.684Z",
+    "updated_at": "2026-06-26T09:48:09.684Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 96,
+  "fields": {
+    "category": 17,
+    "kind": "PLANT",
+    "name_ru": "Спирея «Широбана»",
+    "cultivar": "Широбана",
+    "name_lat": "Spiraea japonica 'Shirobana'",
+    "description": "Спирея японская «Широбана» (Spiraea japonica 'Shirobana') — компактный листопадный кустарник с округлой кроной, высотой до 0,8 м и шириной до 1,2 м. Главная особенность сорта — одновременно раскрывающиеся белые, розовые и малиново‑красные цветки, собранные в плоские щитковидные соцветия. Цветёт с июля до сентября, иногда дольше при удалении отцветших соцветий. Листья тёмно‑зелёные, осенью приобретают красноватые и пурпурные оттенки. Сорт зимостоек, хорошо растёт на солнце и в лёгкой полутени, предпочитает плодородные умеренно влажные почвы. Подходит для рабаток, рокариев, бордюров, групповых посадок и невысоких живых изгородей.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:48:09.693Z",
+    "updated_at": "2026-06-26T09:48:09.693Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 97,
+  "fields": {
+    "category": 17,
+    "kind": "PLANT",
+    "name_ru": "Спирея «Литл Принцесс»",
+    "cultivar": "Литл Принцесс",
+    "name_lat": "Spiraea japonica 'Little Princess'",
+    "description": "Спирея японская «Литл Принцесс» (Spiraea japonica 'Little Princess') — компактный листопадный кустарник с плотной округлой кроной, обычно до 0,5–0,8 м высотой и до 1,2 м шириной. Листья мелкие, тёмно-зелёные, осенью приобретают жёлтые и оранжевые оттенки. Небольшие нежно-розовые цветки с более тёмной серединой собраны в щитковидные соцветия; цветение приходится на июнь—июль. Сорт зимостоек, лучше развивается на солнечном месте или в лёгкой полутени, предпочитает умеренно влажные плодородные почвы. Подходит для бордюров, рабаток, рокариев, контейнеров, одиночных и групповых посадок.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-26T09:48:09.703Z",
+    "updated_at": "2026-06-26T09:48:09.703Z"
   }
 },
 {
@@ -1449,6 +1623,326 @@
   "fields": {
     "product": 77,
     "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 205,
+  "fields": {
+    "product": 88,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 206,
+  "fields": {
+    "product": 88,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 207,
+  "fields": {
+    "product": 89,
+    "price": "450.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 208,
+  "fields": {
+    "product": 89,
+    "price": "350.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 209,
+  "fields": {
+    "product": 90,
+    "price": "600.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 210,
+  "fields": {
+    "product": 90,
+    "price": "500.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 211,
+  "fields": {
+    "product": 91,
+    "price": "350.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 212,
+  "fields": {
+    "product": 91,
+    "price": "250.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 213,
+  "fields": {
+    "product": 92,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 214,
+  "fields": {
+    "product": 92,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 215,
+  "fields": {
+    "product": 93,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 216,
+  "fields": {
+    "product": 93,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 217,
+  "fields": {
+    "product": 94,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 218,
+  "fields": {
+    "product": 94,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 219,
+  "fields": {
+    "product": 95,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 220,
+  "fields": {
+    "product": 95,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 221,
+  "fields": {
+    "product": 96,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 222,
+  "fields": {
+    "product": 96,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 223,
+  "fields": {
+    "product": 97,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 224,
+  "fields": {
+    "product": 97,
+    "price": "400.00",
     "availability_status": "OUT_OF_STOCK",
     "quantity": null,
     "is_active": true,
