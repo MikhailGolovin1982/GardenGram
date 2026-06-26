@@ -1,9 +1,11 @@
+import { BRAND_FULL } from '../constants/brand'
+
 // Подвал. Статичный, виден на всех экранах. Без логики.
 function Footer() {
   const year = new Date().getFullYear()
   return (
     <footer className="site-footer">
-      GardenGram · с. Иглино, Башкортостан · {year}
+      {BRAND_FULL} · с. Иглино, Башкортостан · {year}
     </footer>
   )
 }
