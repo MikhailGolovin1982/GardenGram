@@ -17,3 +17,9 @@ export function getCategoryTree() {
 export function getProducts({ category, search, page } = {}) {
   return apiGet('catalog/products/', { category, search, page })
 }
+
+// Детальная карточка одного товара: фото, описание, все активные варианты с ценами.
+// Бэкенд отдаёт только опубликованные товары; несуществующий/неопубликованный id → 404.
+export function getProduct(id) {
+  return apiGet(`catalog/products/${id}/`)
+}

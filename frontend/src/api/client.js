@@ -40,7 +40,12 @@ export async function apiGet(path, params) {
 
   if (!response.ok) {
     // 4xx/5xx — сервер ответил, но с ошибкой.
-    throw new Error(`Сервер вернул ошибку ${response.status}.`)
+    // Аддитивно прикрепляем числовой статус к объекту ошибки: страница сможет
+    // отличить 404 (товар не найден) от прочих сбоев и показать дружелюбный текст.
+    // Каталог Шага 2 читает только err.message — для него поведение не меняется.
+    const err = new Error(`Сервер вернул ошибку ${response.status}.`)
+    err.status = response.status
+    throw err
   }
 
   return response.json()
