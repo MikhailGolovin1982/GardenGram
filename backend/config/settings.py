@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+from corsheaders.defaults import default_headers
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -41,6 +42,10 @@ if _codespace:
     CSRF_TRUSTED_ORIGINS = [f"https://{_host}"]
 
 CORS_ALLOW_ALL_ORIGINS = True
+# Разрешаем кастомный заголовок гостевой корзины (X-Cart-Token) в дополнение к
+# стандартному списку django-cors-headers. Без этого браузер блокирует preflight
+# любого запроса корзины, несущего токен (см. frontend/_scratch/PLAN_STEP_4.md).
+CORS_ALLOW_HEADERS = [*default_headers, "x-cart-token"]
 
 
 # Application definition
