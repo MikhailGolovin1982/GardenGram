@@ -367,3 +367,183 @@ a:hover {
   margin: 0;
   white-space: pre-line;
 }
+
+/* ============================================================
+   КОРЗИНА (Шаг 4) — на существующих переменных, без новых зависимостей.
+   ============================================================ */
+
+/* Бейдж количества у пункта «Корзина» в шапке. */
+.cart-badge {
+  display: inline-block;
+  margin-left: 0.35rem;
+  min-width: 1.25rem;
+  padding: 0 0.35rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.25rem;
+}
+
+/* Кнопка «В корзину» у варианта (карточка товара). */
+.add-to-cart {
+  margin-left: 0.5rem;
+  padding: 0.35rem 0.7rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.add-to-cart:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Список и строка корзины. */
+.cart-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap; /* на телефоне контролы переносятся под инфо */
+}
+.cart-item-out {
+  opacity: 0.55; /* недоступную не прячем, а приглушаем (как .variant-out) */
+}
+.cart-thumb {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+.cart-item-name {
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.cart-item-form {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.cart-item-unit {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+.cart-item-flag {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Степпер количества. */
+.qty-stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.qty-stepper button {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--text);
+}
+.qty-stepper button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.qty-value {
+  min-width: 2rem;
+  text-align: center;
+}
+.cart-item-subtotal {
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.cart-item-remove {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cart-item-remove:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Итог и действия. */
+.cart-summary {
+  margin-bottom: 1rem;
+}
+.cart-total {
+  font-size: 1.15rem;
+  margin: 0 0 0.25rem;
+}
+.cart-delivery-note,
+.cart-unavailable-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0.15rem 0;
+}
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.cart-clear {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  color: var(--text);
+}
+.cart-clear:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.cart-checkout {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.cart-checkout:hover {
+  text-decoration: none;
+}
+.cart-checkout-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
