@@ -8,7 +8,7 @@
     "slug": "dekorativnye-rasteniya",
     "is_active": true,
     "lft": 1,
-    "rght": 20,
+    "rght": 24,
     "tree_id": 1,
     "level": 0
   }
@@ -21,8 +21,8 @@
     "parent": 4,
     "slug": "gortenzii",
     "is_active": true,
-    "lft": 2,
-    "rght": 7,
+    "lft": 4,
+    "rght": 9,
     "tree_id": 1,
     "level": 1
   }
@@ -35,8 +35,8 @@
     "parent": 5,
     "slug": "metelchatye",
     "is_active": true,
-    "lft": 5,
-    "rght": 6,
+    "lft": 7,
+    "rght": 8,
     "tree_id": 1,
     "level": 2
   }
@@ -50,8 +50,8 @@
     "slug": "yagodnye-kultury",
     "is_active": true,
     "lft": 1,
-    "rght": 12,
-    "tree_id": 2,
+    "rght": 16,
+    "tree_id": 3,
     "level": 0
   }
 },
@@ -59,13 +59,13 @@
   "model": "catalog.category",
   "pk": 8,
   "fields": {
-    "name": "Землника садовая",
+    "name": "Земляника садовая",
     "parent": 7,
     "slug": "zemlnika-sadovaya",
     "is_active": true,
-    "lft": 2,
-    "rght": 3,
-    "tree_id": 2,
+    "lft": 4,
+    "rght": 5,
+    "tree_id": 3,
     "level": 1
   }
 },
@@ -77,9 +77,9 @@
     "parent": 7,
     "slug": "smorodina",
     "is_active": true,
-    "lft": 8,
-    "rght": 9,
-    "tree_id": 2,
+    "lft": 12,
+    "rght": 13,
+    "tree_id": 3,
     "level": 1
   }
 },
@@ -91,9 +91,9 @@
     "parent": 7,
     "slug": "smorodina-zolotistaya",
     "is_active": true,
-    "lft": 10,
-    "rght": 11,
-    "tree_id": 2,
+    "lft": 14,
+    "rght": 15,
+    "tree_id": 3,
     "level": 1
   }
 },
@@ -105,9 +105,9 @@
     "parent": 7,
     "slug": "malina",
     "is_active": true,
-    "lft": 6,
-    "rght": 7,
-    "tree_id": 2,
+    "lft": 8,
+    "rght": 9,
+    "tree_id": 3,
     "level": 1
   }
 },
@@ -119,9 +119,9 @@
     "parent": 7,
     "slug": "kryzhovnik",
     "is_active": true,
-    "lft": 4,
-    "rght": 5,
-    "tree_id": 2,
+    "lft": 6,
+    "rght": 7,
+    "tree_id": 3,
     "level": 1
   }
 },
@@ -133,8 +133,8 @@
     "parent": 5,
     "slug": "drevovidnye",
     "is_active": true,
-    "lft": 3,
-    "rght": 4,
+    "lft": 5,
+    "rght": 6,
     "tree_id": 1,
     "level": 2
   }
@@ -147,8 +147,8 @@
     "parent": 4,
     "slug": "",
     "is_active": true,
-    "lft": 10,
-    "rght": 11,
+    "lft": 12,
+    "rght": 13,
     "tree_id": 1,
     "level": 1
   }
@@ -161,8 +161,8 @@
     "parent": 4,
     "slug": "",
     "is_active": true,
-    "lft": 18,
-    "rght": 19,
+    "lft": 22,
+    "rght": 23,
     "tree_id": 1,
     "level": 1
   }
@@ -175,8 +175,8 @@
     "parent": 4,
     "slug": "",
     "is_active": true,
-    "lft": 16,
-    "rght": 17,
+    "lft": 20,
+    "rght": 21,
     "tree_id": 1,
     "level": 1
   }
@@ -189,8 +189,8 @@
     "parent": 4,
     "slug": "",
     "is_active": true,
-    "lft": 8,
-    "rght": 9,
+    "lft": 10,
+    "rght": 11,
     "tree_id": 1,
     "level": 1
   }
@@ -203,8 +203,8 @@
     "parent": 4,
     "slug": "",
     "is_active": true,
-    "lft": 12,
-    "rght": 15,
+    "lft": 14,
+    "rght": 17,
     "tree_id": 1,
     "level": 1
   }
@@ -217,10 +217,94 @@
     "parent": 56,
     "slug": "",
     "is_active": true,
-    "lft": 13,
-    "rght": 14,
+    "lft": 15,
+    "rght": 16,
     "tree_id": 1,
     "level": 2
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 62,
+  "fields": {
+    "name": "Облепиха",
+    "parent": 7,
+    "slug": "",
+    "is_active": true,
+    "lft": 10,
+    "rght": 11,
+    "tree_id": 3,
+    "level": 1
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 64,
+  "fields": {
+    "name": "Можжевельники",
+    "parent": 4,
+    "slug": "",
+    "is_active": true,
+    "lft": 18,
+    "rght": 19,
+    "tree_id": 1,
+    "level": 1
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 66,
+  "fields": {
+    "name": "Жимолость",
+    "parent": 7,
+    "slug": "",
+    "is_active": true,
+    "lft": 2,
+    "rght": 3,
+    "tree_id": 3,
+    "level": 1
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 68,
+  "fields": {
+    "name": "Барбарисы",
+    "parent": 4,
+    "slug": "",
+    "is_active": true,
+    "lft": 2,
+    "rght": 3,
+    "tree_id": 1,
+    "level": 1
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 71,
+  "fields": {
+    "name": "Плодовые деревья",
+    "parent": null,
+    "slug": "",
+    "is_active": true,
+    "lft": 1,
+    "rght": 4,
+    "tree_id": 2,
+    "level": 0
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 72,
+  "fields": {
+    "name": "Яблони",
+    "parent": 71,
+    "slug": "",
+    "is_active": true,
+    "lft": 2,
+    "rght": 3,
+    "tree_id": 2,
+    "level": 1
   }
 },
 {
@@ -1597,6 +1681,630 @@
     "seller": null,
     "created_at": "2026-06-30T04:04:04.412Z",
     "updated_at": "2026-06-30T04:04:04.412Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 261,
+  "fields": {
+    "category": 8,
+    "kind": "PLANT",
+    "name_ru": "Земляника садовая «Дуэт»",
+    "cultivar": "Дуэт",
+    "name_lat": "Fragaria × ananassa 'Duet'",
+    "description": "Земляника садовая «Дуэт» (Fragaria × ananassa 'Duet') — среднеранний сорт универсального назначения. Куст среднерослый, полураскидистый. Ягоды крупные, правильной тупоконической формы, красные, с сочной среднеплотной мякотью и сладко-кислым вкусом с ароматом. Сорт отличается высокой зимостойкостью и хорошей транспортабельностью ягод.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:30:42.589Z",
+    "updated_at": "2026-06-30T06:30:42.589Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 262,
+  "fields": {
+    "category": 8,
+    "kind": "PLANT",
+    "name_ru": "Земляника садовая «Золушка»",
+    "cultivar": "Золушка",
+    "name_lat": "Fragaria × ananassa 'Zolushka'",
+    "description": "Земляника садовая «Золушка» (Fragaria × ananassa 'Zolushka') — среднепоздний сорт универсального назначения. Куст сильнорослый, компактный; цветоносы располагаются на уровне листьев или ниже. Ягоды средней величины, тупоконические, оранжево-красные, блестящие, с плотной ярко-красной мякотью и кисло-сладким вкусом.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:30:42.599Z",
+    "updated_at": "2026-06-30T06:30:42.599Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 263,
+  "fields": {
+    "category": 8,
+    "kind": "PLANT",
+    "name_ru": "Земляника садовая «Дарёнка»",
+    "cultivar": "Дарёнка",
+    "name_lat": "Fragaria × ananassa 'Darenka'",
+    "description": "Земляника садовая «Дарёнка» (Fragaria × ananassa 'Darenka') — ранний сорт селекции Свердловской станции садоводства. Куст среднерослый, хорошо развитый. Ягоды крупные, до 20,5 г, тёмно-красные, блестящие, округло-конические, с сочной мякотью; сорт ценится за зимостойкость и урожайность.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:30:42.607Z",
+    "updated_at": "2026-06-30T06:30:42.607Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 264,
+  "fields": {
+    "category": 8,
+    "kind": "PLANT",
+    "name_ru": "Земляника садовая «Соловушка»",
+    "cultivar": "Соловушка",
+    "name_lat": "Fragaria × ananassa 'Solovushka'",
+    "description": "Земляника садовая «Соловушка» (Fragaria × ananassa 'Solovushka') — среднеспелый неремонтантный сорт универсального назначения. Куст сильнорослый, компактный, округлый. Ягоды крупные, округло-конические, насыщенно-красные, с плотной сочной мякотью и выраженным ароматом лесной земляники. Сорт зимостойкий и крупноплодный.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:30:42.614Z",
+    "updated_at": "2026-06-30T06:30:42.614Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 265,
+  "fields": {
+    "category": 8,
+    "kind": "PLANT",
+    "name_ru": "Земляника садовая «Эльсанта»",
+    "cultivar": "Эльсанта",
+    "name_lat": "Fragaria × ananassa 'Elsanta'",
+    "description": "Земляника садовая «Эльсанта» (Fragaria × ananassa 'Elsanta') — среднеспелый сорт голландской селекции. Формирует крупные, блестящие, оранжево-красные ягоды конической формы с хорошим вкусом и выраженным земляничным ароматом. Плоды плотные, хорошо переносят сбор и кратковременное хранение.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:30:42.620Z",
+    "updated_at": "2026-06-30T06:30:42.620Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 266,
+  "fields": {
+    "category": 8,
+    "kind": "PLANT",
+    "name_ru": "Земляника садовая «Фейерверк»",
+    "cultivar": "Фейерверк",
+    "name_lat": "Fragaria × ananassa 'Feyerverk'",
+    "description": "Земляника садовая «Фейерверк» (Fragaria × ananassa 'Feyerverk') — сорт среднего срока созревания универсального назначения. Куст мощный, прямостоячий, шаровидный. Ягоды правильной формы, тёмно-красные, блестящие, средней массой около 13 г, с хорошими вкусовыми качествами. Сорт включён в Государственный реестр для Центрально-Чернозёмного региона.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:30:42.626Z",
+    "updated_at": "2026-06-30T06:30:42.626Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 267,
+  "fields": {
+    "category": 8,
+    "kind": "PLANT",
+    "name_ru": "Земляника садовая «Фестивальная ромашка»",
+    "cultivar": "Фестивальная ромашка",
+    "name_lat": "Fragaria × ananassa 'Festivalnaya Romashka'",
+    "description": "Земляника садовая «Фестивальная ромашка» (Fragaria × ananassa 'Festivalnaya Romashka') — среднеспелый высокоурожайный сорт украинской селекции, полученный от скрещивания сортов «Заря» и «Редкоут». Куст полураскидистый, сильнооблиственный. Ягоды красные, конические, в первых сборах крупнее, с хорошим кисло-сладким вкусом.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:30:42.632Z",
+    "updated_at": "2026-06-30T06:30:42.632Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 268,
+  "fields": {
+    "category": 8,
+    "kind": "PLANT",
+    "name_ru": "Земляника садовая «Мице Шиндлер»",
+    "cultivar": "Мице Шиндлер",
+    "name_lat": "Fragaria × ananassa 'Mieze Schindler'",
+    "description": "Земляника садовая «Мице Шиндлер» (Fragaria × ananassa 'Mieze Schindler') — старинный немецкий сорт с особенно насыщенным, десертным ароматом. Ягоды небольшие или средние, тёмно-красные, мягкие, с внешним сходством с малиной. Сорт имеет функционально женские цветки и для полноценного плодоношения нуждается в соседстве сорта-опылителя с совпадающим сроком цветения.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:30:42.638Z",
+    "updated_at": "2026-06-30T06:30:42.638Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 272,
+  "fields": {
+    "category": 62,
+    "kind": "PLANT",
+    "name_ru": "Облепиха «Чуйская»",
+    "cultivar": "Чуйская",
+    "name_lat": "Hippophae rhamnoides 'Chuyskaya'",
+    "description": "Облепиха «Чуйская» (Hippophae rhamnoides 'Chuyskaya') — женский сорт сибирской селекции раннесреднего срока созревания. Куст сдержанного роста, с редкой раскидистой кроной и очень небольшим количеством колючек. Ягоды оранжевые, цилиндрические, средней массой около 0,9 г, кисло-сладкого вкуса; созревают во второй половине августа. Для плодоношения рядом необходим мужской сорт-опылитель.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:34:07.574Z",
+    "updated_at": "2026-06-30T06:34:07.574Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 273,
+  "fields": {
+    "category": 62,
+    "kind": "PLANT",
+    "name_ru": "Облепиха «Превосходная»",
+    "cultivar": "Превосходная",
+    "name_lat": "Hippophae rhamnoides 'Prevoshodnaya'",
+    "description": "Облепиха «Превосходная» (Hippophae rhamnoides 'Prevoshodnaya') — женский сорт среднего срока созревания. Растение среднерослое, с редкой раскидистой кроной и побегами без колючек. Ягоды оранжевые, крупные, средней массой 0,7–0,9 г, с сухим отрывом и кисло-сладким десертным вкусом. Сорт зимостойкий и засухоустойчивый; для получения урожая нужен мужской опылитель.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:34:07.586Z",
+    "updated_at": "2026-06-30T06:34:07.586Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 274,
+  "fields": {
+    "category": 62,
+    "kind": "PLANT",
+    "name_ru": "Облепиха мужская (опылитель)",
+    "cultivar": "",
+    "name_lat": "Hippophae rhamnoides",
+    "description": "Мужская форма облепихи крушиновидной (Hippophae rhamnoides) — растение-опылитель для женских сортов облепихи. Плодов не образует, но даёт жизнеспособную пыльцу. Для стабильного плодоношения женских растений рекомендуется высаживать одно мужское растение рядом примерно с 4–6 женскими экземплярами; место посадки — солнечное.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:34:07.595Z",
+    "updated_at": "2026-06-30T06:34:07.595Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 277,
+  "fields": {
+    "category": 64,
+    "kind": "PLANT",
+    "name_ru": "Можжевельник «Хиберника»",
+    "cultivar": "Хиберника",
+    "name_lat": "Juniperus communis 'Hibernica'",
+    "description": "Можжевельник «Хиберника» — вечнозелёный хвойный кустарник узкоколонновидной формы с плотной серо-зелёной игольчатой хвоей. Во взрослом возрасте обычно достигает 3–5 м высоты при сравнительно небольшой ширине. Предпочитает солнечные места и хорошо дренированную почву; эффектен как вертикальный акцент в композициях, рокариях и регулярных садах.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:35:46.559Z",
+    "updated_at": "2026-06-30T06:35:46.559Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 278,
+  "fields": {
+    "category": 64,
+    "kind": "PLANT",
+    "name_ru": "Можжевельник казацкий",
+    "cultivar": "",
+    "name_lat": "Juniperus sabina",
+    "description": "Можжевельник казацкий — зимостойкий вечнозелёный хвойный кустарник с раскидистыми или приподнимающимися ветвями и ароматной зелёной хвоей. Размер и форма растения зависят от конкретной формы и условий выращивания. Лучше развивается на солнечных участках, в рыхлой дренированной почве; после укоренения хорошо переносит засуху. Подходит для склонов, рокариев, групповых посадок и почвопокровных композиций.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:35:46.569Z",
+    "updated_at": "2026-06-30T06:35:46.569Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 285,
+  "fields": {
+    "category": 66,
+    "kind": "PLANT",
+    "name_ru": "Жимолость «Бажовская»",
+    "cultivar": "Бажовская",
+    "name_lat": "Lonicera caerulea 'Bazhovskaya'",
+    "description": "Жимолость «Бажовская» (Lonicera caerulea 'Bazhovskaya') — сорт среднего срока созревания уральской селекции. Куст сильнорослый, слабораскидистый. Ягоды продолговатые, тёмно-синие с сизым налётом, средней массой 1,25–1,5 г; вкус сладко-кислый, с пряным оттенком, без горечи. Сорт зимостойкий; для стабильного плодоношения требуется перекрёстное опыление.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:37:09.132Z",
+    "updated_at": "2026-06-30T06:37:09.132Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 286,
+  "fields": {
+    "category": 66,
+    "kind": "PLANT",
+    "name_ru": "Жимолость «Бакчарская»",
+    "cultivar": "Бакчарская",
+    "name_lat": "Lonicera caerulea 'Bakcharskaya'",
+    "description": "Жимолость «Бакчарская» (Lonicera caerulea 'Bakcharskaya') — сорт среднего срока созревания. Куст среднеплотный, полураскидистый. Ягоды тёмно-фиолетовые с выраженным восковым налётом, удлинённо-каплевидные, средней массой около 0,8 г, кисло-сладкого вкуса с лёгкой горчинкой. Зимостойкий сорт универсального назначения; для урожая необходимы сорта-опылители.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:37:09.158Z",
+    "updated_at": "2026-06-30T06:37:09.159Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 287,
+  "fields": {
+    "category": 66,
+    "kind": "PLANT",
+    "name_ru": "Жимолость «Галочка»",
+    "cultivar": "Галочка",
+    "name_lat": "Lonicera caerulea 'Galochka'",
+    "description": "Жимолость «Галочка» (Lonicera caerulea 'Galochka') — зимостойкий сорт с созреванием в первой декаде июля. Ягоды эллиптические, синие с голубым восковым налётом, средней массой 0,6–1,0 г, без горечи. Зрелые плоды не осыпаются; сорт устойчив к основным болезням и вредителям. Для стабильного плодоношения рекомендуется посадка рядом с другими сортами жимолости.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:37:09.169Z",
+    "updated_at": "2026-06-30T06:37:09.169Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 288,
+  "fields": {
+    "category": 66,
+    "kind": "PLANT",
+    "name_ru": "Жимолость «Памяти Гидзюка»",
+    "cultivar": "Памяти Гидзюка",
+    "name_lat": "Lonicera caerulea 'Pamyati Gidzyuka'",
+    "description": "Жимолость «Памяти Гидзюка» (Lonicera caerulea 'Pamyati Gidzyuka') — сорт очень раннего срока созревания: ягоды поспевают во второй половине июня. Плоды удлинённо-цилиндрические, тёмно-фиолетовые, почти чёрные, с восковым налётом, массой 0,8–1,1 г; вкус кисло-сладкий, десертный. Сорт зимостойкий, засухоустойчивый и устойчивый к болезням и вредителям.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:37:09.177Z",
+    "updated_at": "2026-06-30T06:37:09.177Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 289,
+  "fields": {
+    "category": 66,
+    "kind": "PLANT",
+    "name_ru": "Жимолость «Стойкая»",
+    "cultivar": "Стойкая",
+    "name_lat": "Lonicera caerulea 'Stoikaya'",
+    "description": "Жимолость «Стойкая» (Lonicera caerulea 'Stoikaya') — позднеспелый зимостойкий сорт южноуральской селекции. Куст сильнорослый, слабораскидистый, с толстыми прямыми побегами и крупными тёмно-зелёными листьями. Ягоды после созревания долго держатся на ветвях и не осыпаются; сорт устойчив к пятнистостям. Для получения урожая необходимо перекрёстное опыление.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:37:09.188Z",
+    "updated_at": "2026-06-30T06:37:09.188Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 290,
+  "fields": {
+    "category": 66,
+    "kind": "PLANT",
+    "name_ru": "Жимолость «Фиалка»",
+    "cultivar": "Фиалка",
+    "name_lat": "Lonicera caerulea 'Fialka'",
+    "description": "Жимолость «Фиалка» (Lonicera caerulea 'Fialka') — сорт среднего срока созревания. Куст высотой до 1,4 м, с изящной обратноконической кроной. Ягоды крупные, более 1 г, широковеретеновидные или удлинённо-кувшиновидные, голубовато-синие с восковым налётом; вкус кисло-сладкий, десертный. Осыпаемость зрелых ягод слабая. Для плодоношения нужны сорта-опылители.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:37:09.197Z",
+    "updated_at": "2026-06-30T06:37:09.197Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 303,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Арлекин»",
+    "cultivar": "Арлекин",
+    "name_lat": "Ribes uva-crispa 'Arlekin'",
+    "description": "Крыжовник «Арлекин» (Ribes uva-crispa 'Arlekin') — сорт среднего срока созревания южноуральской селекции. Куст среднерослый, среднераскидистый, слабошиповатый. Ягоды округло-овальные, тёмно-вишнёвые, почти чёрные, кисло-сладкого вкуса. Сорт зимостойкий, урожайный и устойчивый к мучнистой росе.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.685Z",
+    "updated_at": "2026-06-30T06:38:44.685Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 304,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Берилл»",
+    "cultivar": "Берилл",
+    "name_lat": "Ribes uva-crispa 'Berill'",
+    "description": "Крыжовник «Берилл» (Ribes uva-crispa 'Berill') — сорт среднего срока созревания южноуральской селекции. Куст среднерослый, густой, с немногочисленными шипами преимущественно в нижней части побегов. Ягоды крупные, светло-зелёные, округлые, с тонкой кожицей и десертным кисло-сладким вкусом. Сорт зимостойкий и урожайный.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.698Z",
+    "updated_at": "2026-06-30T06:38:44.698Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 305,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Владил»",
+    "cultivar": "Владил",
+    "name_lat": "Ribes uva-crispa 'Vladil'",
+    "description": "Крыжовник «Владил» (Командор) (Ribes uva-crispa 'Vladil') — среднеранний слабошиповатый сорт южноуральской селекции. Куст сильнорослый, компактный. Ягоды округлые, тёмно-красные, почти чёрные, с тонкой кожицей и приятным сладко-кислым вкусом. Сорт зимостойкий, высокоурожайный и устойчивый к мучнистой росе.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.707Z",
+    "updated_at": "2026-06-30T06:38:44.707Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 306,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Грушенька»",
+    "cultivar": "Грушенька",
+    "name_lat": "Ribes uva-crispa 'Grushenka'",
+    "description": "Крыжовник «Грушенька» (Ribes uva-crispa 'Grushenka') — популярный бесшипный сорт позднего срока созревания. Куст среднерослый, компактный, с хорошо облиственными побегами. Ягоды грушевидные, тёмно-пурпурные, кисло-сладкого вкуса; пригодны для свежего потребления и переработки. Сорт ценится за зимостойкость и устойчивость к основным заболеваниям.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.716Z",
+    "updated_at": "2026-06-30T06:38:44.716Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 307,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Консул»",
+    "cultivar": "Консул",
+    "name_lat": "Ribes uva-crispa 'Konsul'",
+    "description": "Крыжовник «Консул» (Сенатор) (Ribes uva-crispa 'Konsul') — сорт среднего срока созревания южноуральской селекции. Куст сильнорослый, среднераскидистый; шипы редкие и слабые, преимущественно в нижней части побегов. Ягоды тёмно-красные, почти чёрные, с тонкой кожицей и сладко-кислым вкусом. Сорт зимостойкий и урожайный.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.726Z",
+    "updated_at": "2026-06-30T06:38:44.727Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 308,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Малахит»",
+    "cultivar": "Малахит",
+    "name_lat": "Ribes uva-crispa 'Malakhit'",
+    "description": "Крыжовник «Малахит» (Ribes uva-crispa 'Malakhit') — сорт среднего срока созревания. Куст сильнорослый, раскидистый и густой, с шипами по длине побегов. Ягоды крупные, зелёные, округлые, с выраженным жилкованием и восковым налётом. Сорт отличается высокой зимостойкостью, продуктивностью и устойчивостью к американской мучнистой росе.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.736Z",
+    "updated_at": "2026-06-30T06:38:44.736Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 309,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Оранжевый мохнатый»",
+    "cultivar": "Оранжевый мохнатый",
+    "name_lat": "Ribes uva-crispa",
+    "description": "Крыжовник «Оранжевый мохнатый» (Ribes uva-crispa) — позиция с названием из исходного списка. Детальные сортовые признаки и происхождение требуют уточнения. Кустарник предназначен для выращивания в плодово-ягодном саду; характеристики ягод, срок созревания и особенности ухода рекомендуется дополнить в административной панели после проверки названия.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.745Z",
+    "updated_at": "2026-06-30T06:38:44.745Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 310,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Сливовый»",
+    "cultivar": "Сливовый",
+    "name_lat": "Ribes uva-crispa 'Slivovyi'",
+    "description": "Крыжовник «Сливовый» (Ribes uva-crispa 'Slivovyi') — среднеранний сорт селекции ВНИИ садоводства им. И.В. Мичурина. Куст сильнорослый, компактный, с выраженной шиповатостью побегов. Ягоды тёмно-красные или почти чёрные, овальные, с кисло-сладким вкусом и характерным сливовым оттенком. Сорт зимостойкий и пригоден для свежего потребления и переработки.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.754Z",
+    "updated_at": "2026-06-30T06:38:44.754Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 311,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Солнышко»",
+    "cultivar": "Солнышко",
+    "name_lat": "Ribes uva-crispa",
+    "description": "Крыжовник «Солнышко» (Ribes uva-crispa) — позиция с названием из исходного списка. Детальные сортовые признаки требуют уточнения. Это плодовый листопадный кустарник для выращивания на солнечном месте с регулярным уходом, санитарной обрезкой и защитой от болезней. Карточку рекомендуется дополнить после подтверждения происхождения сорта.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.764Z",
+    "updated_at": "2026-06-30T06:38:44.764Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 312,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Снежана»",
+    "cultivar": "Снежана",
+    "name_lat": "Ribes uva-crispa 'Snezhana'",
+    "description": "Крыжовник «Снежана» (Ribes uva-crispa 'Snezhana') — позднеспелый сорт универсального назначения. Куст среднерослый, компактный, с короткими одиночными шипами только в нижней части побегов. Ягоды овально-грушевидные, желтовато-зелёные, с восковым налётом и кисло-сладким вкусом, средней массой около 4 г. Сорт отличается высокой зимостойкостью.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.773Z",
+    "updated_at": "2026-06-30T06:38:44.773Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 313,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Уральский Изумруд»",
+    "cultivar": "Уральский Изумруд",
+    "name_lat": "Ribes uva-crispa 'Uralskiy Izumrud'",
+    "description": "Крыжовник «Уральский Изумруд» (Ribes uva-crispa 'Uralskiy Izumrud') — раннеспелый сорт южноуральской селекции. Куст среднерослый, слабораскидистый, густой, с шипами по длине побегов. Ягоды крупные, округлые, ярко-зелёные, с тонкой кожицей и десертным вкусом. Сорт зимостойкий, урожайный и подходит для свежего потребления.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.783Z",
+    "updated_at": "2026-06-30T06:38:44.783Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 314,
+  "fields": {
+    "category": 12,
+    "kind": "PLANT",
+    "name_ru": "Крыжовник «Черносливовый»",
+    "cultivar": "Черносливовый",
+    "name_lat": "Ribes uva-crispa 'Chernoslivovyi'",
+    "description": "Крыжовник «Черносливовый» (Ribes uva-crispa 'Chernoslivovyi') — среднеранний сорт селекции ВНИИ садоводства им. И.В. Мичурина. Куст среднерослый, среднераскидистый, с редкими шипами главным образом в нижней части побегов. Ягоды тёмные, с кисло-сладким вкусом и характерным ароматическим оттенком. Сорт зимостойкий и универсального назначения.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:38:44.792Z",
+    "updated_at": "2026-06-30T06:38:44.792Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 317,
+  "fields": {
+    "category": 68,
+    "kind": "PLANT",
+    "name_ru": "Барбарис Тунберга «Голден Ринг»",
+    "cultivar": "Голден Ринг",
+    "name_lat": "Berberis thunbergii f. atropurpurea 'Golden Ring'",
+    "description": "Барбарис Тунберга «Голден Ринг» — колючий листопадный кустарник компактной формы, обычно около 1 м высотой. Листья пурпурно-бордовые с тонкой жёлтой каймой, осенью приобретают более яркие красные оттенки. Весной появляются мелкие бледно-жёлтые цветки с красноватым оттенком, а осенью — декоративные тёмно-красные ягоды. Подходит для контрастных групп, бордюров и одиночных посадок.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:41:16.194Z",
+    "updated_at": "2026-06-30T06:41:16.194Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 318,
+  "fields": {
+    "category": 68,
+    "kind": "PLANT",
+    "name_ru": "Барбарис Тунберга «Ауреа»",
+    "cultivar": "Ауреа",
+    "name_lat": "Berberis thunbergii 'Aurea'",
+    "description": "Барбарис Тунберга «Ауреа» — густой колючий листопадный кустарник с яркой золотисто-жёлтой листвой. Весной и в начале лета листья наиболее насыщенно жёлтые, затем становятся жёлто-зелёными. Весной цветёт мелкими бледно-жёлтыми цветками с красноватым оттенком; осенью образует блестящие тёмно-красные ягоды. Эффектен в бордюрах, цветовых композициях и как акцентное растение.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:41:16.204Z",
+    "updated_at": "2026-06-30T06:41:16.204Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 325,
+  "fields": {
+    "category": 72,
+    "kind": "PLANT",
+    "name_ru": "Яблоня «Антоновка обыкновенная»",
+    "cultivar": "Антоновка обыкновенная",
+    "name_lat": "Malus domestica 'Antonovka obyknovennaya'",
+    "description": "Яблоня «Антоновка обыкновенная» — раннезимний сорт народной селекции. Дерево сильнорослое, с возрастом формирует широкую округлую крону. Плоды средние или выше среднего размера, зеленовато-жёлтые, с сочной сладко-кислой мякотью и характерным сильным ароматом. Съёмная зрелость наступает в середине сентября; плоды хранятся до трёх месяцев и хорошо подходят для свежего употребления, переработки и мочения.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:43:40.935Z",
+    "updated_at": "2026-06-30T06:43:40.935Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 326,
+  "fields": {
+    "category": 72,
+    "kind": "PLANT",
+    "name_ru": "Яблоня «Башкирское зимнее»",
+    "cultivar": "Башкирское зимнее",
+    "name_lat": "Malus domestica 'Bashkirskoye zimneye'",
+    "description": "Яблоня «Башкирское зимнее» — позднезимний сорт башкирской селекции. Дерево среднерослое, с прочной округлой кроной. Плоды массой 87–145 г, зелёно-жёлтые с размытым красным румянцем; мякоть сочная, кисло-сладкая, средней плотности. Урожай хорошо хранится — до 220 дней; сорт устойчив к неблагоприятной погоде и парше. Самобесплоден, поэтому для стабильного урожая требуется сорт-опылитель.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:43:40.946Z",
+    "updated_at": "2026-06-30T06:43:40.946Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 327,
+  "fields": {
+    "category": 72,
+    "kind": "PLANT",
+    "name_ru": "Яблоня «Бельфлер Башкирский»",
+    "cultivar": "Бельфлер Башкирский",
+    "name_lat": "Malus domestica 'Belfler bashkirskiy'",
+    "description": "Яблоня «Бельфлер Башкирский» — раннезимний сорт башкирской селекции. Дерево среднерослое, с компактной округлой кроной. Плоды средней величины (85–145 г), зеленовато-жёлтые с полосатым пурпурным румянцем; мякоть сочная, нежная, ароматная. Съём плодов проводят в первой декаде сентября; при хранении они сохраняются до конца февраля.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:43:40.956Z",
+    "updated_at": "2026-06-30T06:43:40.956Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 328,
+  "fields": {
+    "category": 72,
+    "kind": "PLANT",
+    "name_ru": "Яблоня «Китайка золотая ранняя»",
+    "cultivar": "Китайка золотая ранняя",
+    "name_lat": "Malus 'Kitaika zolotaya rannyaya'",
+    "description": "Яблоня «Китайка золотая ранняя» — раннелетний сорт селекции И. В. Мичурина. Дерево средней силы роста; с возрастом крона становится раскидистой, с плакучим характером ветвей. Плоды мелкие, янтарно-жёлтые, с желтоватой кисловатой мякотью; созревают в конце июля. Урожай следует использовать сразу: плоды хранятся всего 5–7 дней и перед созреванием могут осыпаться. Сорт ценится за высокую зимостойкость и раннее вступление в плодоношение.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:43:40.966Z",
+    "updated_at": "2026-06-30T06:43:40.966Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 329,
+  "fields": {
+    "category": 72,
+    "kind": "PLANT",
+    "name_ru": "Яблоня «Осеннее полосатое»",
+    "cultivar": "Осеннее полосатое (Штрейфлинг, Штрифель)",
+    "name_lat": "Malus domestica 'Osennee polosatoe'",
+    "description": "Яблоня «Осеннее полосатое» (Штрейфлинг, Штрифель) — распространённый осенний сорт народной селекции. Дерево сильнорослое, с широкой раскидистой кроной. Плоды крупные, зелёно-жёлтые, с яркими оранжево-красными полосами; мякоть сочная, кисло-сладкая, гармоничного вкуса. Съёмная зрелость — начало сентября; в холодильнике плоды сохраняются до начала декабря.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:43:40.977Z",
+    "updated_at": "2026-06-30T06:43:40.977Z"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 330,
+  "fields": {
+    "category": 72,
+    "kind": "PLANT",
+    "name_ru": "Яблоня «Терентьевка»",
+    "cultivar": "Терентьевка",
+    "name_lat": "Malus domestica 'Terentevka'",
+    "description": "Яблоня «Терентьевка» — летний сорт народной селекции. Дерево среднерослое, с хорошо облиственной шаровидной кроной. Плоды мелкие, плоскоокруглые, светло-зелёные с кирпично-красным румянцем; мякоть рыхлая, ароматная, кисло-сладкая. Созревание приходится на третью декаду августа, хранение — около месяца. Сорт высокозимостойкий и урожайный, но самобесплодный: для плодоношения необходим подходящий сорт-опылитель.",
+    "is_published": true,
+    "seller": null,
+    "created_at": "2026-06-30T06:43:40.987Z",
+    "updated_at": "2026-06-30T06:43:40.987Z"
   }
 },
 {
@@ -4351,6 +5059,1126 @@
   "fields": {
     "product": 252,
     "price": "200.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 510,
+  "fields": {
+    "product": 261,
+    "price": "70.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 511,
+  "fields": {
+    "product": 262,
+    "price": "70.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 512,
+  "fields": {
+    "product": 263,
+    "price": "70.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 513,
+  "fields": {
+    "product": 264,
+    "price": "70.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 514,
+  "fields": {
+    "product": 265,
+    "price": "70.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 515,
+  "fields": {
+    "product": 266,
+    "price": "70.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 516,
+  "fields": {
+    "product": 267,
+    "price": "70.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 517,
+  "fields": {
+    "product": 268,
+    "price": "70.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 524,
+  "fields": {
+    "product": 272,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 525,
+  "fields": {
+    "product": 272,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 526,
+  "fields": {
+    "product": 273,
+    "price": "600.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 527,
+  "fields": {
+    "product": 273,
+    "price": "500.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 528,
+  "fields": {
+    "product": 274,
+    "price": "200.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 529,
+  "fields": {
+    "product": 274,
+    "price": "100.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 534,
+  "fields": {
+    "product": 277,
+    "price": "800.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 535,
+  "fields": {
+    "product": 277,
+    "price": "700.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 536,
+  "fields": {
+    "product": 278,
+    "price": "800.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 537,
+  "fields": {
+    "product": 278,
+    "price": "700.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 550,
+  "fields": {
+    "product": 285,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 551,
+  "fields": {
+    "product": 285,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 552,
+  "fields": {
+    "product": 286,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 553,
+  "fields": {
+    "product": 286,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 554,
+  "fields": {
+    "product": 287,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 555,
+  "fields": {
+    "product": 287,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 556,
+  "fields": {
+    "product": 288,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 557,
+  "fields": {
+    "product": 288,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 558,
+  "fields": {
+    "product": 289,
+    "price": "800.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 559,
+  "fields": {
+    "product": 289,
+    "price": "700.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 560,
+  "fields": {
+    "product": 290,
+    "price": "1000.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 561,
+  "fields": {
+    "product": 290,
+    "price": "900.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 586,
+  "fields": {
+    "product": 303,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 587,
+  "fields": {
+    "product": 303,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 588,
+  "fields": {
+    "product": 304,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 589,
+  "fields": {
+    "product": 304,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 590,
+  "fields": {
+    "product": 305,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 591,
+  "fields": {
+    "product": 305,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 592,
+  "fields": {
+    "product": 306,
+    "price": "200.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 593,
+  "fields": {
+    "product": 306,
+    "price": "100.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 594,
+  "fields": {
+    "product": 307,
+    "price": "800.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 595,
+  "fields": {
+    "product": 307,
+    "price": "700.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 596,
+  "fields": {
+    "product": 308,
+    "price": "600.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 597,
+  "fields": {
+    "product": 308,
+    "price": "500.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 598,
+  "fields": {
+    "product": 309,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 599,
+  "fields": {
+    "product": 309,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 600,
+  "fields": {
+    "product": 310,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 601,
+  "fields": {
+    "product": 310,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 602,
+  "fields": {
+    "product": 311,
+    "price": "200.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 603,
+  "fields": {
+    "product": 311,
+    "price": "100.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 604,
+  "fields": {
+    "product": 312,
+    "price": "600.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 605,
+  "fields": {
+    "product": 312,
+    "price": "500.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 606,
+  "fields": {
+    "product": 313,
+    "price": "800.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 607,
+  "fields": {
+    "product": 313,
+    "price": "700.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 608,
+  "fields": {
+    "product": 314,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 609,
+  "fields": {
+    "product": 314,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 614,
+  "fields": {
+    "product": 317,
+    "price": "500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 615,
+  "fields": {
+    "product": 317,
+    "price": "400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 616,
+  "fields": {
+    "product": 318,
+    "price": "400.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 617,
+  "fields": {
+    "product": 318,
+    "price": "300.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 630,
+  "fields": {
+    "product": 325,
+    "price": "1000.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 631,
+  "fields": {
+    "product": 325,
+    "price": "900.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 632,
+  "fields": {
+    "product": 326,
+    "price": "1000.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 633,
+  "fields": {
+    "product": 326,
+    "price": "900.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 634,
+  "fields": {
+    "product": 327,
+    "price": "1000.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 635,
+  "fields": {
+    "product": 327,
+    "price": "900.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 636,
+  "fields": {
+    "product": 328,
+    "price": "1500.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 637,
+  "fields": {
+    "product": 328,
+    "price": "1400.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 638,
+  "fields": {
+    "product": 329,
+    "price": "1000.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 639,
+  "fields": {
+    "product": 329,
+    "price": "900.00",
+    "availability_status": "OUT_OF_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "OKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 640,
+  "fields": {
+    "product": 330,
+    "price": "1800.00",
+    "availability_status": "IN_STOCK",
+    "quantity": null,
+    "is_active": true,
+    "variant_label": "",
+    "root_system": "ZKS",
+    "volume_l": null,
+    "size_label": "",
+    "age_note": ""
+  }
+},
+{
+  "model": "catalog.productvariant",
+  "pk": 641,
+  "fields": {
+    "product": 330,
+    "price": "1700.00",
     "availability_status": "OUT_OF_STOCK",
     "quantity": null,
     "is_active": true,
