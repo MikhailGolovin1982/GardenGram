@@ -547,3 +547,170 @@ a:hover {
   opacity: 0.5;
   pointer-events: none;
 }
+
+/* ============================================================
+   ОФОРМЛЕНИЕ ЗАКАЗА + СТРАНИЦА ЗАКАЗА (Шаг 5). Минимум — читаемость, не дизайн.
+   ============================================================ */
+
+/* Форма checkout: поля в столбик, читаемая ширина. */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 480px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.form-label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.checkout-form input,
+.checkout-form textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+  width: 100%;
+}
+.checkout-form textarea {
+  resize: vertical;
+}
+
+/* Блок выбора доставки. */
+.delivery-choice {
+  gap: 0.4rem;
+}
+.delivery-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+}
+.delivery-option input {
+  width: auto; /* radio не растягиваем на всю ширину */
+}
+
+/* Ошибка под конкретным полем. */
+.field-error {
+  color: #b3261e;
+  font-size: 0.85rem;
+}
+
+/* Сводка итога на checkout. */
+.checkout-summary {
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+}
+.checkout-summary p {
+  margin: 0.2rem 0;
+}
+.checkout-total {
+  font-size: 1.15rem;
+}
+.checkout-hint {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Кнопка «Оформить заказ». */
+.checkout-submit {
+  padding: 0.6rem 1.2rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.checkout-submit:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.checkout-back {
+  margin-top: 1rem;
+}
+
+/* --- Страница заказа --- */
+.order-page {
+  max-width: 640px;
+}
+.order-number {
+  font-size: 1.1rem;
+}
+.order-save-link {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  margin: 1rem 0 1.5rem;
+}
+.order-save-link p {
+  margin: 0 0 0.5rem;
+}
+.order-url {
+  overflow-wrap: anywhere; /* длинный forwarded-URL не ломает верстку */
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.order-copy {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+}
+.order-section-title {
+  font-size: 1.1rem;
+  margin: 1.25rem 0 0.5rem;
+}
+.order-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.order-item-name {
+  overflow-wrap: anywhere;
+}
+.order-item-variant {
+  color: var(--text-muted);
+}
+.order-item-calc {
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.order-totals {
+  margin: 1rem 0;
+}
+.order-totals p {
+  margin: 0.2rem 0;
+}
+.order-total {
+  font-size: 1.15rem;
+}
+.order-customer p {
+  margin: 0.2rem 0;
+}
+.order-status {
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+.order-back {
+  margin-top: 1rem;
+}

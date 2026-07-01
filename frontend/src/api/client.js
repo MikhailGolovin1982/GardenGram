@@ -55,6 +55,20 @@ async function apiRequest(method, path, { params, body, headers } = {}) {
     // статус: страница сможет отличить 404 (товар не найден) от прочих сбоев.
     const err = new Error(`Сервер вернул ошибку ${response.status}.`)
     err.status = response.status
+    // Пытаемся прочитать тело ошибки (DRF отдаёт JSON: {"detail": "..."} или
+    // {"поле": ["..."]}). Нужно форме checkout, чтобы показать ошибки полей.
+    // В try/catch — на случай пустого/не-JSON тела. Старые вызовы (каталог,
+    // корзина) err.data просто не читают — их поведение не меняется.
+    try {
+      err.data = await response.json()
+      // Если бэкенд дал человекочитаемое общее сообщение — используем его как текст
+      // ошибки (напр. «Корзина пуста.»). Ошибки полей останутся в err.data.
+      if (err.data && typeof err.data.detail === 'string') {
+        err.message = err.data.detail
+      }
+    } catch {
+      // тело пустое или не JSON — оставляем общее сообщение выше
+    }
     throw err
   }
 
