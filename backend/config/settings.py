@@ -39,6 +39,7 @@ SECRET_KEY = os.getenv(
 DEBUG = os.getenv("DEBUG", "True").strip().lower() in ("1", "true", "yes", "on")
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = []
 
 # Dev: автоматически разрешаем forwarded-домен GitHub Codespaces.
 # Срабатывает только внутри Codespaces (есть переменная CODESPACE_NAME),
@@ -48,7 +49,17 @@ if _codespace:
     _domain = os.getenv("GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN", "app.github.dev")
     _host = f"{_codespace}-8000.{_domain}"
     ALLOWED_HOSTS.append(_host)
-    CSRF_TRUSTED_ORIGINS = [f"https://{_host}"]
+    CSRF_TRUSTED_ORIGINS.append(f"https://{_host}")
+
+# Бой: боевые хосты backend задаются переменной DJANGO_ALLOWED_HOSTS (список через
+# запятую), чтобы вписать поддомен Amvera / свой .ru без правки кода. Для каждого
+# хоста добавляем https-origin в CSRF_TRUSTED_ORIGINS. В dev переменной нет — блок
+# ничего не делает.
+for _h in os.getenv("DJANGO_ALLOWED_HOSTS", "").split(","):
+    _h = _h.strip()
+    if _h:
+        ALLOWED_HOSTS.append(_h)
+        CSRF_TRUSTED_ORIGINS.append(f"https://{_h}")
 
 CORS_ALLOW_ALL_ORIGINS = True
 # Разрешаем кастомный заголовок гостевой корзины (X-Cart-Token) в дополнение к
