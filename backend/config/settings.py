@@ -32,7 +32,11 @@ SECRET_KEY = os.getenv(
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# Читаем из окружения. В dev (Codespace, без .env) — дефолт True для удобства
+# (подробные ошибки, раздача статики/media через runserver); в бою на Amvera
+# ОБЯЗАТЕЛЬНО задать переменную DEBUG=False. Строку из env разбираем явно, иначе
+# "False" (непустая строка) молча стало бы истиной.
+DEBUG = os.getenv("DEBUG", "True").strip().lower() in ("1", "true", "yes", "on")
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 
