@@ -24,7 +24,12 @@ load_dotenv(os.path.join(BASE_DIR.parent, ".env"))
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure---z%y3#k#jja)@qez$n2)pm0$&qnl0qf_3(#3yu!5@0mj*)n)%"
+# Читаем из окружения. В dev (Codespace, без .env) — небезопасный дефолт для удобства;
+# в бою значение задаётся переменной SECRET_KEY в панели Amvera (в git его нет).
+SECRET_KEY = os.getenv(
+    "SECRET_KEY",
+    "django-insecure---z%y3#k#jja)@qez$n2)pm0$&qnl0qf_3(#3yu!5@0mj*)n)%",
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
