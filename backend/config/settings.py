@@ -61,7 +61,22 @@ for _h in os.getenv("DJANGO_ALLOWED_HOSTS", "").split(","):
         ALLOWED_HOSTS.append(_h)
         CSRF_TRUSTED_ORIGINS.append(f"https://{_h}")
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS: кто из браузера имеет право дёргать наш API.
+# В dev (DEBUG=True) — разрешаем всем, чтобы не возиться с меняющимся forwarded-адресом
+# Codespace-фронта (порт 5173). В бою (DEBUG=False) «разрешено всем» само выключается,
+# и остаётся только белый список боевых origin из окружения (см. ниже).
+CORS_ALLOW_ALL_ORIGINS = DEBUG
+
+# Бой: боевые origin фронта задаются переменной DJANGO_CORS_ALLOWED_ORIGINS (список
+# через запятую, напр. "https://gardengram.amvera.io,https://gardengram.ru"), чтобы
+# вписать реальный адрес фронта без правки кода. В dev переменной нет — список пустой,
+# и работает CORS_ALLOW_ALL_ORIGINS выше. Origin = схема+хост(+порт), со схемой https.
+CORS_ALLOWED_ORIGINS = [
+    _o.strip()
+    for _o in os.getenv("DJANGO_CORS_ALLOWED_ORIGINS", "").split(",")
+    if _o.strip()
+]
+
 # Разрешаем кастомный заголовок гостевой корзины (X-Cart-Token) в дополнение к
 # стандартному списку django-cors-headers. Без этого браузер блокирует preflight
 # любого запроса корзины, несущего токен (см. frontend/_scratch/PLAN_STEP_4.md).
